@@ -1,0 +1,187 @@
+.material-icons_main {
+    font-family: 'Material icons';
+    font-size: 30px;
+    color: black;
+    margin: 0px;
+    position: relative;
+    top: 10px;
+}
+.main_picture_and_link {
+   margin: 0 40px;
+   min-width: 940px;
+ }
+div.picture_main img{
+    width: 100%;
+    height: 100%;
+}
+.main_link_info , .flowers_link_info , .platform_link_info{
+    position: absolute;
+    bottom: 140px;
+    z-index: 1;
+}
+div.main_link_info h2 {
+    margin-left: 30px;
+    font-size: 40px;
+}
+.info_snikers , .info_snikers_flowers {
+margin: 20px 30px 50px;
+font-size: 25px;
+}
+.link_button_main , .link_button_flowers {
+    background-color: black;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    padding: 20px 50px;
+    margin: 30px;
+    font-size: 20px;
+}
+.types_snikers_part , .type_find_styles , .clothers_links{
+    margin: 20px 35px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px ,30%));
+    grid-auto-flow: row;
+    grid-column-gap: 5%;
+}
+div.types_snikers_part  a{
+    overflow: hidden;
+    position: relative;
+    text-decoration: none;
+    display: inline-block;
+}
+div.types_snikers_part img{
+    width: 100%;
+    display: block;
+    transition: 1s;
+}
+div.types_snikers_part img:hover{
+    transform: scale(1.2);
+   }
+.types_snikers_text {
+    background-color: white;
+    color: black;
+    position: absolute;
+    bottom: 10%;
+    margin-left: 10px;
+    font-size: 18px;
+    font-weight: 300;
+    padding: 10px 20px;
+}
+.type_find_styles {
+    grid-template-columns: repeat(4, 20%);
+}
+div.find_styles_part h1, div.trends_now h1 , div.clothers_part h1, div.accessories_part h1 , div.open_forYS_part h1{
+    margin-left: 30px;
+    font-size: 45px;
+}
+div.find_styles_part  a{
+    overflow: hidden;
+    position: relative;
+    text-decoration: none;
+    display: inline-block;
+}
+div.find_styles_part img{
+    width: 100%;
+    display: block;
+    transition: 1s;
+}
+div.find_styles_part img:hover{
+    transform: scale(1.1);
+   }
+   div.find_styles_part h5 {
+       bottom: -10%;
+   }
+.flowers_types_part {
+    margin: 0 40px;
+    min-width: 940px;
+    position: relative;
+}
+.flowers_link_info {
+    bottom: 160px;
+}
+.trends_now ,.clothers_part {
+    margin-left: 30px;
+}
+div.trends_now a, div.clothers_part a , div.accessories_part a{
+    padding: 15px;
+    text-decoration: none;
+    color: black;
+}
+.platform_link_info {
+    bottom: 220px;
+}
+.platform_snikers_part {
+    position: relative;
+    margin: 0 40px;
+    min-width: 940px;
+}
+.clothers_links {
+    grid-template-columns: repeat(auto-fill, minmax(180px ,21%)); 
+}
+div.clothers_links  a{
+    overflow: hidden;
+    position: relative;
+    text-decoration: none;
+    display: inline-block;
+}
+div.clothers_links img{
+    width: 100%;
+    display: block;
+}
+div.clothers_links h5 {
+    bottom: -10%;
+}
+.accessories_part {
+    position: relative;
+    margin: 0 40px;
+}
+.table_links {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: 30px;
+}
+.table_links_big_box {
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+}
+div.table_links_big_box div{
+    width: 100%;
+    border: 2px solid;
+    border-right: none;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+div.table_links_big_box a {
+    text-decoration: none;
+    color: black;
+}
+.table_links_small_box {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 50%;
+    height: 100px;
+    margin: 0;
+}
+div.table_links_small_box div{
+    width: calc(98% / 3);
+    min-width: 136px;
+    border: 2px solid;
+    border-bottom: 1px solid;
+    height: 49px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+div.table_links_small_box div:nth-last-of-type(-n+3){
+    border-top: 1px solid;
+    border-bottom: 2px solid;
+}
+div.table_links_small_box a {
+    text-decoration: none;
+    color: black;
+}
