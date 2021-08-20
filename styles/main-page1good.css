@@ -1,0 +1,109 @@
+.main_good {
+    display: flex;
+    flex-direction: row;
+}
+.photo_outline {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+}
+.photos{
+    display: grid;
+    grid-template-columns: 45% 45%;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+
+}
+.main_chuck70 {
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+div.photos img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    border: 1px solid rgb(223, 219, 219);
+}
+.sole_chuck70 {
+    grid-row-start: 5;
+    grid-row-end: 6;
+    grid-column-start: 1;
+    grid-column-end: 3; 
+}
+.info_fitting_return {
+    padding: 15px;
+    border: 1px solid rgb(223, 219, 219);
+    background-color: #e4e4e4;
+}
+.material-icons-main_1good {
+    font-family: Material icons;
+    font-size: 40px;
+}
+div.info_fitting_return h5 {
+    font-size: 17px;
+    margin-top: 5px;
+}
+div.info_fitting_return p {
+    font-size: 15px;
+}
+.outline {
+    padding:30px 70px 30px 30px;
+}
+div.outline p ,div.outline ul {
+    font-size: 15px;
+    line-height: 24px; 
+}
+.info_section {
+    position: sticky;
+    top: 100px;
+    width: 40%;
+}
+div.info_section a{
+    color: black;
+    font-size: 12px;
+}
+.composition {
+    color:  #9a9696;
+    font-size: 15px;
+}
+.multi_color {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+div.multi_color~p{
+    font-size: 14px;
+}
+.article {
+    font-size: 10px;
+    color:#9a9696;
+}
+.choose_color {
+    width: 120px;
+    height: 120px;
+    display: block;
+    margin-bottom: 50px;
+    cursor: pointer;
+}
+div.choose_color img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    position: relative;
+    z-index: 2;
+    border: 1px solid rgb(223, 219, 219);
+}
+div.choose_color p {
+    margin-left: 1px;
+    margin-top: -6px;
+    background-color: black;
+    border: 3px solid black;
+    position: relative;
+    z-index: 1;
+}
+div.choose_color:hover p {
+    z-index: 3;
+}
