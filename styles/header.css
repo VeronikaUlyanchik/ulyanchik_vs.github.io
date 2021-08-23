@@ -26,6 +26,7 @@
 }
 .links {
     margin: 15px;
+    font-size: 17px;
 }
 div.links a {
     text-decoration: none;
@@ -33,6 +34,7 @@ div.links a {
 }
 div.links a:hover {
     color: black;
+
 }
 div.header_right a {
     text-decoration: none;
@@ -43,4 +45,14 @@ div.header_right a {
     color: white;
     margin: 0;
     padding: 15px;
+}
+.header_menu {
+    display: flex;
+    flex-direction: row;
+    background-color:#f4f4f4 ;
+}
+.links_header_menu {
+    font-size: 12px;
+    border-left: 1px solid rgb(97, 89, 89);
+    padding-left: 5px;
 }

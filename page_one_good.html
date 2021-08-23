@@ -17,11 +17,13 @@
     body {
         font-family: 'Raleway', sans-serif;
         margin: 0;
+        overflow-y: scroll;
         scroll-behavior: smooth;
     }
+    /* Не работает скролл и не работает стики */
 </style>
 <body>
-    <!-- добавить ссылки (как в оригинале) -->
+   <div class="container">
     <div class="header_line"></div>
     <div class="header">
         <div class="header_left">
@@ -37,6 +39,11 @@
             <a href=""><span class="material-icons_header">shopping_cart</span></a>
             <a href=""><span class="material-icons_header search">search</span></a>
         </div>
+    </div>
+    <div class="header_menu">
+        <div class="links links_header_menu"><a href="file:///C:/Users/user/project/ulyanchik_vs.github.io-1/index.html">Главная</a></div>
+        <div class="links links_header_menu"><a href="">Мужское</a></div>
+        <div class="links links_header_menu"><a href="">Коллекции</a></div>
     </div>
     <div class="main_good">
         <div class="photo_outline">
@@ -102,11 +109,42 @@
             <P class="article">Артикул: 58482568</P>
         </div>
         <div class="choose_color">
-            <img src="assets/chuck 70/main_chuck70.jpg" alt="">
+            <img src="assets/chuck 70/main_chuck70.jpg" alt="chuck 70">
             <p></p>
         </div>
         <hr>
+        <div class="table_choose_size">
+            <p>Выберите размер</p>
+            <div class="size_table">
+                <div class="size_number" id="35" onclick="chooseSize(35)">35</div>
+                <div class="size_number" id="36" onclick="chooseSize(36)">36</div>
+                <div class="size_number" id="37" onclick="chooseSize(37)">37</div>
+                <div class="size_number" id="38" onclick="chooseSize(38)">38</div>
+                <div class="size_number" id="39" onclick="chooseSize(39)">39</div>
+                <div class="size_number" id="39.5" onclick="chooseSize(39.5)">39.5</div>
+                <div class="size_number" id="40" onclick="chooseSize(40)">40</div>
+                <div class="size_number" id="41" onclick="chooseSize(41)">41</div>
+                <div class="size_number" id="42" onclick="chooseSize(42)">42</div>
+                <div class="size_number" id="43" onclick="chooseSize(43)">43</div>
+                <div class="size_number" id="44" onclick="chooseSize(44)">44</div>
+                <div class="size_number" id="45" onclick="chooseSize(45)">45</div>
+                <div class="size_number" id="46" onclick="chooseSize(46)">46</div>
+                <div class="size_number" id="47" onclick="chooseSize(47)">47</div>
+            </div>
+            <h2>290 BYN</h2>
+            <div class="choose_and_add_in_favor">
+                <button class="choose_snickers"> Добавить в корзину</button>
+                <button class="add_in_favor" onclick="addFavor()"> <span id="not_favor" class="material-icons">
+                    favorite_border
+                    </span>
+                    <span id="favor" class="material-icons favor">
+                        favorite
+                        </span></button>
+            </div>
+        </div>
     </div>
-    
+</div>
+    <script src="js/js_page_one_good/choosen_size.js"></script>
+    <script src="js/js_page_one_good/add_favor.js"></script>
 </body>
 </html>

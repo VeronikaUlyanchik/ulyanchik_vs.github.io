@@ -57,7 +57,7 @@ div.outline p ,div.outline ul {
 }
 .info_section {
     position: sticky;
-    top: 100px;
+    top: 0;
     width: 40%;
 }
 div.info_section a{
@@ -106,4 +106,55 @@ div.choose_color p {
 }
 div.choose_color:hover p {
     z-index: 3;
+}
+.size_table {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+}
+.size_number {
+    border: 1px solid rgb(223, 219, 219);
+    text-align: center;
+    padding: 14px;
+}
+.size_number:hover {
+    color: rgb(243, 206, 151);
+    cursor: pointer;
+}
+.js-size-choosen {
+    background-color: black;
+    color: white;
+}
+.choose_and_add_in_favor {
+    display: flex;
+    flex-direction: row;
+    height: 50px;
+}
+.choose_snickers {
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+    flex-grow: 1;
+    font-size: 18px;
+    font-family: 'Raleway', sans-serif;
+    cursor: pointer;
+}
+.choose_snickers:active {
+font-size: 16px;
+}
+.add_in_favor {
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+    width: 50px;
+    cursor: pointer;
+}
+.not_favor {
+    display: none;
+}
+.favor {
+    display: none;
+}
+.favor_block {
+    display: block;
+    margin-top: -3px;
 }
