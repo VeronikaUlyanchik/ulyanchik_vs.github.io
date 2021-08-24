@@ -101,6 +101,7 @@ div.find_styles_part img:hover{
 }
 .trends_now ,.clothers_part {
     margin-left: 30px;
+    position: relative;
 }
 div.trends_now a, div.clothers_part a , div.accessories_part a{
     padding: 15px;

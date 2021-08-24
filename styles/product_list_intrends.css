@@ -1,0 +1,28 @@
+.product_list_intrends {
+    display: grid;
+    grid-template-columns: repeat(14,207px);
+    height: 250px;
+    overflow: hidden;
+    width: 100%;
+    margin-top: -45px;
+}
+.good_card_trends img {
+    width: 100%;
+    display: block;
+    object-fit: cover;
+}
+.good_card_trends p {
+    font-size: 15px;
+    margin-top: -15px;
+}
+.next {
+    position: absolute;
+    top:155px;
+    font-size: 25px;
+    right: 0px;
+    background-color: white;
+    border: none;
+}
+.next:active {
+    font-size: 20px;
+}

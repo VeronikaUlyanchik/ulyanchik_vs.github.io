@@ -12,6 +12,9 @@
 .header {
     background-color: white;
 }
+.header_right {
+    display: flex;
+}
 .header , .header_left {
     display: flex;
     flex-direction: row;

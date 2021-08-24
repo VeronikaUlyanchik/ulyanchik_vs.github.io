@@ -1,0 +1,49 @@
+.h2_main {
+    margin-left: 65px;
+}
+.filter_panel {
+    display: flex;
+    flex-direction: row;
+    border: 1px solid  rgb(179, 170, 170);
+}
+.fiter {
+    display: flex;
+    flex-direction: row; 
+    border-right: 1px solid  rgb(179, 170, 170);
+    flex-grow: 1;
+    padding: 10px;
+}
+.found_good {
+    width: 183px;
+    border-right: 1px solid  rgb(179, 170, 170);
+    padding: 18px 10px;
+}
+.sort {
+    width: 200px;
+    font-size: 13px;
+    padding: 10px;
+}
+.drop_down {
+    position: relative;
+    top: 6px;
+    margin-left: -7px;
+    margin-right: 14px;
+}
+.product_list {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 5px;
+    margin: 20px 30px;
+}
+div.product_list img {
+    width: 100%;
+    display: block;
+    object-fit: cover;
+}
+.good_card {
+    text-decoration: none;
+    color: black;
+}
+.good_card:hover {
+    border: 1px solid  rgb(179, 170, 170); ;
+}
