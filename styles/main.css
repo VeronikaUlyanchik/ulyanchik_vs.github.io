@@ -9,6 +9,7 @@
 .main_picture_and_link {
    margin: 0 40px;
    min-width: 940px;
+   position: relative;
  }
 div.picture_main img{
     width: 100%;

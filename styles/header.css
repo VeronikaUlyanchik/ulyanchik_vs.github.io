@@ -31,11 +31,12 @@
     margin: 15px;
     font-size: 17px;
 }
-div.links a {
+div.links p {
     text-decoration: none;
     color: rgb(97, 89, 89);
+    cursor: pointer;
 }
-div.links a:hover {
+div.links p:hover {
     color: black;
 
 }
