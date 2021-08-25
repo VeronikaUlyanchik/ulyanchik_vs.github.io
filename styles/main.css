@@ -8,7 +8,7 @@
 }
 .main_picture_and_link {
    margin: 0 40px;
-   min-width: 940px;
+   min-width: 900px;
    position: relative;
  }
 div.picture_main img{
@@ -94,7 +94,7 @@ div.find_styles_part img:hover{
    }
 .flowers_types_part {
     margin: 0 40px;
-    min-width: 940px;
+    min-width: 900px;
     position: relative;
 }
 .flowers_link_info {

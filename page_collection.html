@@ -12,6 +12,8 @@
     <link rel="stylesheet" type="text/css" href="styles/header.css">
     <link rel="stylesheet" type="text/css" href="styles/footer.css">
     <link rel="stylesheet" type="text/css" href="styles/main-collection-page.css">
+    <link rel="stylesheet" type="text/css" href="styles/pop-up.css">
+</head>
 </head>
 <style>
      body {
@@ -27,10 +29,10 @@
         <div class="header">
             <div class="header_left">
                <a href="index.html"><img src="assets/Logo-dark.svg" alt="" class="logo"></a>
-                <div class="links"><a href="page_collection.html">Женское</a></div>
-                <div class="links"><a href="page_collection.html">Мужское</a></div>
-                <div class="links"><a href="page_collection.html">Детское</a></div>
-                <div class="links"><a href="page_collection.html">Распродажа</a></div>
+               <div class="links"> <p id="women_btn" onclick="openCloseMenuWomen()">Женское</p></div>
+               <div class="links"><p id="men_btn" onclick="openCloseMenuMen()">Мужское</p></div>
+               <div class="links"><p id="kids_btn" onclick="openCloseMenuKids()">Детское</p></div>
+               <div class="links"><p id="kids_btn" onclick="openCloseMenuSale()">Распродажа</p></div>
             </div>
             <div class="header_right">
                 <a href=""><span class="material-icons_header">account_circle</span></a>
@@ -41,8 +43,90 @@
         </div>
         <div class="header_menu">
             <div class="links links_header_menu"><a href="file:///C:/Users/user/project/ulyanchik_vs.github.io-1/index.html">Главная</a></div>
-            <div class="links links_header_menu"><a href="">Мужское</a></div>
+            <div class="links links_header_menu"><p>Мужское</p></div>
         </div>
+        <div class="background_none" id="background" onclick="closeMenu()">
+            <button> <span class="material-icons" id="close_btn" onclick="closeMenu()">close</span> </button>
+        </div>
+
+        <div class="menu-women" id="menu-women">
+            <div class="menu_part_left">
+                <h2>Кеды</h2>
+                <p><a href="page_collection.html" class="menu_links_snikers">Все кеды</a></p>
+                <p><a href="page_collection.html" class="menu_links_snikers">Высокие</a></p>
+                <p><a href="page_collection.html" class="menu_links_snikers">Низкие</a></p>
+                <p><a href="page_collection.html" class="menu_links_snikers">На платформе</a></p>
+                <h2> <a class="menu_links_snikers menu-clohers-acc-links" href="page_collection.html">Одежда</a></h2>
+                <h2> <a class="menu_links_snikers menu-clohers-acc-links" href="page_collection.html">Аксессуары</a></h2>
+            </div>
+            <div class="menu_part_right">
+                <h2>Актуальное</h2>
+                <p><a href="page_collection.html" class="menu_links_snikers" >Новинки</a></p>
+                <p><a href="page_collection.html" class="menu_links_snikers" >Кожанные кеды</a></p>
+                <p><a href="page_collection.html" class="menu_links_snikers" >Бестселлеры</a></p>
+                <h2> Коллекции</h2>
+                <p><a href="page_collection.html" class="menu_links_snikers" >Chuck Taylor All Star</a></p>
+                <p><a href="page_collection.html" class="menu_links_snikers" >Chuck 70</a></p>
+                <p><a href="page_collection.html" class="menu_links_snikers" >Limited Edition</a></p>
+            </div>
+        </div>
+
+        <div class="menu-men" id="menu-men">
+            <div class="menu_part_left">
+                <h2>Кеды</h2>
+                <p><a href="page_collection.html" class="menu_links_snikers">Все кеды</a></p>
+                <p><a href="page_collection.html" class="menu_links_snikers">Высокие</a></p>
+                <p><a href="page_collection.html" class="menu_links_snikers">Низкие</a></p>
+                <h2> <a class="menu_links_snikers menu-clohers-acc-links" href="page_collection.html">Одежда</a></h2>
+                <h2> <a class="menu_links_snikers menu-clohers-acc-links" href="page_collection.html">Аксессуары</a></h2>
+            </div>
+            <div class="menu_part_right">
+                <h2>Актуальное</h2>
+                <p><a href="page_collection.html" class="menu_links_snikers" >Новинки</a></p>
+                <p><a href="page_collection.html" class="menu_links_snikers" >Кожанные кеды</a></p>
+                <p><a href="page_collection.html" class="menu_links_snikers" >Бестселлеры</a></p>
+                <p><a href="page_collection.html" class="menu_links_snikers" >Basketball</a></p>
+                <h2> Коллекции</h2>
+                <p><a href="page_collection.html" class="menu_links_snikers" >Chuck Taylor All Star</a></p>
+                <p><a href="page_collection.html" class="menu_links_snikers" >Chuck 70</a></p>
+                <p><a href="page_collection.html" class="menu_links_snikers" >Limited Edition</a></p>
+                <p><a href="page_collection.html" class="menu_links_snikers" >Pro Leather</a></p>
+            </div>
+        </div>
+
+        <div class="menu-kids" id="menu-kids">
+            <div class="menu_part_left">
+                <h2>Кеды</h2>
+                <p><a href="page_collection.html" class="menu_links_snikers">Все кеды</a></p>
+                <p><a href="page_collection.html" class="menu_links_snikers">Высокие</a></p>
+                <p><a href="page_collection.html" class="menu_links_snikers">Низкие</a></p>
+                <h2> <a class="menu_links_snikers menu-clohers-acc-links" href="page_collection.html">Одежда</a></h2>
+                <h2> <a class="menu_links_snikers menu-clohers-acc-links" href="page_collection.html">Аксессуары</a></h2>
+            </div>
+            <div class="menu_part_right">
+                <h2> Коллекции</h2>
+                <p><a href="page_collection.html" class="menu_links_snikers" >Chuck Taylor All Star</a></p>
+            </div>
+        </div>
+
+        <div class="menu-sale" id="menu-sale">
+            <div class="menu_part_left">
+                <h2>Кеды</h2>
+                <p><a href="page_collection.html" class="menu_links_snikers">Все кеды</a></p>
+                <p><a href="page_collection.html" class="menu_links_snikers">Высокие</a></p>
+                <p><a href="page_collection.html" class="menu_links_snikers">Низкие</a></p>
+                <h2> <a class="menu_links_snikers menu-clohers-acc-links" href="page_collection.html">Одежда</a></h2>
+                <h2> <a class="menu_links_snikers menu-clohers-acc-links" href="page_collection.html">Аксессуары</a></h2>
+            </div>
+            <div class="menu_part_right">
+                <h2> Скидки до 40% 
+                    <br>
+                    на отдельные товары</h2>
+            </div>
+        </div>
+
+
+
         <div class="main_collection_page">
             <h2 class="h2_main">Кеды</h2>
             <div class="filter_panel">
@@ -177,5 +261,6 @@
                 <h5> © 2021 </h5>
             </div>
         </div>
+        <script src="js/main-page/js-menu.js"></script>
 </body>
 </html>

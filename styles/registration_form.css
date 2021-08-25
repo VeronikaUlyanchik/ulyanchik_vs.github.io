@@ -1,0 +1,108 @@
+.login , .registration {
+    background-color: #e8e8e8;
+    width: 500px;
+    height: 500px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    left: 36%;
+    top: 237px;
+    transform: translateX(3000px);
+    transition: 1s;
+    z-index: 100;
+}
+.login_translate {
+    transform: translate(0);
+}
+.login_translate_hidden {
+    display: none;
+}
+.registration_translate {
+    transition: 0s;
+    transform: translate(0);
+}
+.registration_translate_hidden {
+    display: none;
+}
+.registration {
+    height: 600px;  
+}
+.btns_log_reg {
+    display: flex;
+    flex-direction: row;
+}
+.login_button, .registration_button {
+    font-size: 25px;
+    margin: 10px 20px;
+    color: black;
+    padding-bottom: 10px;
+    border-bottom: 3px solid black;
+    cursor: pointer;
+}
+#login_button , #registration_button {
+    font-size: 25px;
+    margin: 10px 20px;
+    color:grey;
+    cursor: pointer;
+}
+.login_form{
+    margin-top: 80px;
+}
+.input_email , .input_password {
+    outline: none;
+    border: none;
+    background-color: #e8e8e8;
+    border-bottom: 1px solid grey;
+    width: 340px;
+    height: 40px;
+    margin-bottom: 30px;
+}
+#login {
+    width: 204px;
+    height: 50px;
+    background-color: black;
+    color: white;
+    border: none;
+    font-size: 18px;
+   margin: 0px 0px 20px 63px;
+}
+#login:active {
+    font-size: 16px; 
+}
+#remember {
+    margin-bottom: 30px;
+}
+#create_acc {
+    background-color: #e8e8e8;
+    border: none;
+    border-bottom: 1px solid;
+    cursor: pointer;
+}
+#name, #surname {
+    margin-bottom: 30px;
+    height: 40px;
+    outline: none;
+    border: none;
+    background-color: #e8e8e8;
+    border-bottom: 1px solid grey;
+}
+.label_surname {
+    margin-left: 140px;
+}
+#registrate {
+    width: 204px;
+    height: 50px;
+    background-color: black;
+    color: white;
+    border: none;
+    font-size: 18px;
+   margin: 0px 0px 20px 63px;
+} 
+#login_acc {
+    background-color: #e8e8e8;
+    border: none;
+    border-bottom: 1px solid;
+    cursor: pointer;
+}

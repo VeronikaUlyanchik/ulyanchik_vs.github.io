@@ -31,6 +31,7 @@ function openCloseMenuMen (){
     menuWomen.classList.remove('menu-flex-women')
     menuKids.classList.remove('menu-flex-kids')
     menuSale.classList.remove('menu-flex-sale')
+    loginForm.classList.remove('login_translate')
 }}
 
 function openCloseMenuKids (){
@@ -44,11 +45,13 @@ function openCloseMenuKids (){
     menuWomen.classList.remove('menu-flex-women')
     menuMen.classList.remove('menu-flex-men')
     menuSale.classList.remove('menu-flex-sale')
+    loginForm.classList.remove('login_translate')
 }}
 function openCloseMenuSale (){
     if (menuSale.classList.contains('menu-flex-sale')) {
         menuSale.classList.remove('menu-flex-sale')
     background.classList.remove('background')
+    loginForm.classList.remove('login_translate')
     }
     else{
     menuSale.classList.add('menu-flex-sale')
@@ -56,6 +59,7 @@ function openCloseMenuSale (){
     menuWomen.classList.remove('menu-flex-women')
     menuMen.classList.remove('menu-flex-men')
     menuKids.classList.remove('menu-flex-kids')
+    loginForm.classList.remove('login_translate')
 }}
 
 function closeMenu () {
@@ -64,4 +68,8 @@ function closeMenu () {
     background.classList.remove('background')
     menuKids.classList.remove('menu-flex-kids')
     menuSale.classList.remove('menu-flex-sale')
+    loginForm.classList.remove('login_translate')
+    loginForm.classList.remove('login_translate')
+    backgroundRegistr.classList.remove('background')
+    registrationForm.classList.remove('registration_translate')
 }

@@ -14,6 +14,8 @@
     <link rel="stylesheet" type="text/css" href="styles/footer.css">
     <link rel="stylesheet" type="text/css" href="styles/product_list_intrends.css">
     <link rel="stylesheet" type="text/css" href="styles/pop-up.css">
+    <link rel="stylesheet" type="text/css" href="styles/header_media.css">
+    <link rel="stylesheet" type="text/css" href="styles/registration_form.css">
 </head>
 <style>
     body {
@@ -33,7 +35,7 @@
             <div class="links"><p id="kids_btn" onclick="openCloseMenuSale()">Распродажа</p></div>
         </div>
         <div class="header_right">
-            <a href=""><span class="material-icons_header">account_circle</span></a>
+            <a><span class="material-icons_header" onclick="openLoginForm()">account_circle</span></a>
             <a href=""><span class="material-icons_header">favorite_border</span></a>
             <a href=""><span class="material-icons_header">shopping_cart</span></a>
             <a href=""><span class="material-icons_header search">search</span></a>
@@ -47,77 +49,120 @@
         <div class="menu-women" id="menu-women">
             <div class="menu_part_left">
                 <h2>Кеды</h2>
-                <p><a href="" class="menu_links_snikers">Все кеды</a></p>
-                <p><a href="" class="menu_links_snikers">Высокие</a></p>
-                <p><a href="" class="menu_links_snikers">Низкие</a></p>
-                <p><a href="" class="menu_links_snikers">На платформе</a></p>
-                <h2> <a class="menu_links_snikers menu-clohers-acc-links" href="">Одежда</a></h2>
-                <h2> <a class="menu_links_snikers menu-clohers-acc-links" href="">Аксессуары</a></h2>
+                <p><a href="page_collection.html" class="menu_links_snikers">Все кеды</a></p>
+                <p><a href="page_collection.html" class="menu_links_snikers">Высокие</a></p>
+                <p><a href="page_collection.html" class="menu_links_snikers">Низкие</a></p>
+                <p><a href="page_collection.html" class="menu_links_snikers">На платформе</a></p>
+                <h2> <a class="menu_links_snikers menu-clohers-acc-links" href="page_collection.html">Одежда</a></h2>
+                <h2> <a class="menu_links_snikers menu-clohers-acc-links" href="page_collection.html">Аксессуары</a></h2>
             </div>
             <div class="menu_part_right">
                 <h2>Актуальное</h2>
-                <p><a href="" class="menu_links_snikers" >Новинки</a></p>
-                <p><a href="" class="menu_links_snikers" >Кожанные кеды</a></p>
-                <p><a href="" class="menu_links_snikers" >Бестселлеры</a></p>
+                <p><a href="page_collection.html" class="menu_links_snikers" >Новинки</a></p>
+                <p><a href="page_collection.html" class="menu_links_snikers" >Кожанные кеды</a></p>
+                <p><a href="page_collection.html" class="menu_links_snikers" >Бестселлеры</a></p>
                 <h2> Коллекции</h2>
-                <p><a href="" class="menu_links_snikers" >Chuck Taylor All Star</a></p>
-                <p><a href="" class="menu_links_snikers" >Chuck 70</a></p>
-                <p><a href="" class="menu_links_snikers" >Limited Edition</a></p>
+                <p><a href="page_collection.html" class="menu_links_snikers" >Chuck Taylor All Star</a></p>
+                <p><a href="page_collection.html" class="menu_links_snikers" >Chuck 70</a></p>
+                <p><a href="page_collection.html" class="menu_links_snikers" >Limited Edition</a></p>
             </div>
         </div>
 
         <div class="menu-men" id="menu-men">
             <div class="menu_part_left">
                 <h2>Кеды</h2>
-                <p><a href="" class="menu_links_snikers">Все кеды</a></p>
-                <p><a href="" class="menu_links_snikers">Высокие</a></p>
-                <p><a href="" class="menu_links_snikers">Низкие</a></p>
-                <h2> <a class="menu_links_snikers menu-clohers-acc-links" href="">Одежда</a></h2>
-                <h2> <a class="menu_links_snikers menu-clohers-acc-links" href="">Аксессуары</a></h2>
+                <p><a href="page_collection.html" class="menu_links_snikers">Все кеды</a></p>
+                <p><a href="page_collection.html" class="menu_links_snikers">Высокие</a></p>
+                <p><a href="page_collection.html" class="menu_links_snikers">Низкие</a></p>
+                <h2> <a class="menu_links_snikers menu-clohers-acc-links" href="page_collection.html">Одежда</a></h2>
+                <h2> <a class="menu_links_snikers menu-clohers-acc-links" href="page_collection.html">Аксессуары</a></h2>
             </div>
             <div class="menu_part_right">
                 <h2>Актуальное</h2>
-                <p><a href="" class="menu_links_snikers" >Новинки</a></p>
-                <p><a href="" class="menu_links_snikers" >Кожанные кеды</a></p>
-                <p><a href="" class="menu_links_snikers" >Бестселлеры</a></p>
-                <p><a href="" class="menu_links_snikers" >Basketball</a></p>
+                <p><a href="page_collection.html" class="menu_links_snikers" >Новинки</a></p>
+                <p><a href="page_collection.html" class="menu_links_snikers" >Кожанные кеды</a></p>
+                <p><a href="page_collection.html" class="menu_links_snikers" >Бестселлеры</a></p>
+                <p><a href="page_collection.html" class="menu_links_snikers" >Basketball</a></p>
                 <h2> Коллекции</h2>
-                <p><a href="" class="menu_links_snikers" >Chuck Taylor All Star</a></p>
-                <p><a href="" class="menu_links_snikers" >Chuck 70</a></p>
-                <p><a href="" class="menu_links_snikers" >Limited Edition</a></p>
-                <p><a href="" class="menu_links_snikers" >Pro Leather</a></p>
+                <p><a href="page_collection.html" class="menu_links_snikers" >Chuck Taylor All Star</a></p>
+                <p><a href="page_collection.html" class="menu_links_snikers" >Chuck 70</a></p>
+                <p><a href="page_collection.html" class="menu_links_snikers" >Limited Edition</a></p>
+                <p><a href="page_collection.html" class="menu_links_snikers" >Pro Leather</a></p>
             </div>
         </div>
 
         <div class="menu-kids" id="menu-kids">
             <div class="menu_part_left">
                 <h2>Кеды</h2>
-                <p><a href="" class="menu_links_snikers">Все кеды</a></p>
-                <p><a href="" class="menu_links_snikers">Высокие</a></p>
-                <p><a href="" class="menu_links_snikers">Низкие</a></p>
-                <h2> <a class="menu_links_snikers menu-clohers-acc-links" href="">Одежда</a></h2>
-                <h2> <a class="menu_links_snikers menu-clohers-acc-links" href="">Аксессуары</a></h2>
+                <p><a href="page_collection.html" class="menu_links_snikers">Все кеды</a></p>
+                <p><a href="page_collection.html" class="menu_links_snikers">Высокие</a></p>
+                <p><a href="page_collection.html" class="menu_links_snikers">Низкие</a></p>
+                <h2> <a class="menu_links_snikers menu-clohers-acc-links" href="page_collection.html">Одежда</a></h2>
+                <h2> <a class="menu_links_snikers menu-clohers-acc-links" href="page_collection.html">Аксессуары</a></h2>
             </div>
             <div class="menu_part_right">
                 <h2> Коллекции</h2>
-                <p><a href="" class="menu_links_snikers" >Chuck Taylor All Star</a></p>
+                <p><a href="page_collection.html" class="menu_links_snikers" >Chuck Taylor All Star</a></p>
             </div>
         </div>
 
         <div class="menu-sale" id="menu-sale">
             <div class="menu_part_left">
                 <h2>Кеды</h2>
-                <p><a href="" class="menu_links_snikers">Все кеды</a></p>
-                <p><a href="" class="menu_links_snikers">Высокие</a></p>
-                <p><a href="" class="menu_links_snikers">Низкие</a></p>
-                <h2> <a class="menu_links_snikers menu-clohers-acc-links" href="">Одежда</a></h2>
-                <h2> <a class="menu_links_snikers menu-clohers-acc-links" href="">Аксессуары</a></h2>
+                <p><a href="page_collection.html" class="menu_links_snikers">Все кеды</a></p>
+                <p><a href="page_collection.html" class="menu_links_snikers">Высокие</a></p>
+                <p><a href="page_collection.html" class="menu_links_snikers">Низкие</a></p>
+                <h2> <a class="menu_links_snikers menu-clohers-acc-links" href="page_collection.html">Одежда</a></h2>
+                <h2> <a class="menu_links_snikers menu-clohers-acc-links" href="page_collection.html">Аксессуары</a></h2>
             </div>
             <div class="menu_part_right">
                 <h2> Скидки до 40% 
                     <br>
                     на отдельные товары</h2>
             </div>
+        </div>
+
+        <div class="login" id="login_form" >
+            <div class="btns_log_reg">
+            <div class="login_button">Вход</div>
+            <div id="registration_button" onclick="openRegisterForm()">Регистрация</div>
+            </div>
+        <form class="login_form">
+            <label for="email">Электронная почта</label> <br>
+            <input type="email" id="email" class="input_email" required> <br>
+            <label for="password">Пароль</label> <br>
+            <input type="password" id="password" class="input_password" required> <br>
+            <label for="remember" class="label_remember"> Запомнить меня</label>
+            <input id="remember" type="checkbox" name="remember" value="yes" checked=""> <br>
+            <button id="login">
+                Вход
+            </button>
+        </form>
+        <div> или <button id="create_acc" onclick="openRegisterForm()" >СОЗДАТЬ УЧЕТНУЮ ЗАПИСЬ</button></div>
+        </div>
+    
+    
+    
+        <div class="registration" id="registration_form" >
+            <div class="btns_log_reg">
+            <div id="login_button" onclick="openLoginFormFromRegForm()">Вход</div>
+            <div class="registration_button">Регистрация</div>
+            </div>
+        <form class="login_form">
+            <label for="email">Электронная почта</label> <br>
+            <input type="email" id="email" class="input_email" required> <br>
+            <label for="name"> Имя </label> <label for="surname" class="label_surname"> Фамилия</label> <br>
+            <input type="text" id="name"> <input type="text" id="surname"> <br>
+    
+            <label for="password">Пароль</label> <br>
+            <input type="password" id="password" class="input_password" required> <br>
+            <label for="remember" class="label_remember"> Я принимаю условия соглашения</label>
+            <input id="remember" type="checkbox" name="remember" value="yes" checked=""> <br>
+            <button id="registrate">
+                Зарегистрироваться
+            </button>
+        </form>
+        <div> или <button id="login_acc" onclick="openLoginFormFromRegForm()">ВОЙТИ ПОД СВОЕЙ УЧЕТНОЙ ЗАПИСЬЮ</button></div>
         </div>
 
         <div class="main_picture_and_link">
@@ -405,5 +450,6 @@
     </div>
 
     <script src="js/main-page/js-menu.js"></script>
+    <script src="js/main-page/js-registration.js"></script>
 </body>
 </html>
