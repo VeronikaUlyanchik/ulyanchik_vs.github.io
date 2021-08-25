@@ -17,6 +17,7 @@ function openCloseMenuWomen (){
     menuMen.classList.remove('menu-flex-men')
     menuKids.classList.remove('menu-flex-kids')
     menuSale.classList.remove('menu-flex-sale')
+    loginForm.classList.remove('login_translate')
 
 }}
 
@@ -62,7 +63,7 @@ function openCloseMenuSale (){
     loginForm.classList.remove('login_translate')
 }}
 
-function closeMenu () {
+function closeMenuAndForm() {
     menuWomen.classList.remove('menu-flex-women')
     menuMen.classList.remove('menu-flex-men')
     background.classList.remove('background')
