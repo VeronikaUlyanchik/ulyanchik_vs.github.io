@@ -5,6 +5,7 @@ const backgroundRegistr =  document.getElementById('background');
 function openLoginForm () {
     if ( loginForm.classList.contains('login_translate')) {
     loginForm.classList.remove('login_translate')
+    loginForm.classList.remove('login_translate_hidden')
     backgroundRegistr.classList.remove('background')
     registrationForm.classList.remove('registration_translate')
 }
