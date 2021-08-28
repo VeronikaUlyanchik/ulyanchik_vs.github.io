@@ -1,10 +1,16 @@
+.container_goods {
+    width :1630px;
+    margin: auto;
+    overflow: hidden;
+}
 .product_list_intrends {
     display: grid;
-    grid-template-columns: repeat(14,207px);
+    grid-template-columns: repeat(14,205px);
     height: 250px;
-    overflow: hidden;
     width: 100%;
     margin-top: -45px;
+    transform: translateX(0);
+    transition: transform ease-in 0.2s
 }
 .good_card_trends img {
     width: 100%;
