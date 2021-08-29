@@ -11,7 +11,7 @@
     top: 10px;
 }
 .main_picture_and_link {
-   margin: 0 40px;
+   margin: 0 80px;
    min-width: 900px;
    position: relative;
  }
@@ -75,7 +75,7 @@ div.types_snikers_part img:hover{
 .type_find_styles {
     grid-template-columns: repeat(4, 20%);
 }
-div.find_styles_part h1, div.trends_now h1 , div.clothers_part h1, div.accessories_part h1 , div.open_forYS_part h1{
+div.find_styles_part h1, div.trends_now h1 , div.clothers_part h1, div.accessories_part h1{
     margin-left: 30px;
     font-size: 45px;
 }
@@ -97,7 +97,7 @@ div.find_styles_part img:hover{
        bottom: -10%;
    }
 .flowers_types_part {
-    margin: 0 40px;
+    margin: 0 80px;
     min-width: 900px;
     position: relative;
 }
@@ -118,7 +118,7 @@ div.trends_now a, div.clothers_part a , div.accessories_part a{
 }
 .platform_snikers_part {
     position: relative;
-    margin: 0 40px;
+    margin: 0 80px;
     min-width: 940px;
 }
 .clothers_links {
@@ -140,6 +140,10 @@ div.clothers_links h5 {
 .accessories_part {
     position: relative;
     margin: 0 40px;
+}
+.h1_open_forYS_part {
+    margin-left: 67px;
+    font-size: 45px;
 }
 .table_links {
     display: flex;

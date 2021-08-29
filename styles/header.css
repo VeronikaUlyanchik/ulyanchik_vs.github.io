@@ -5,6 +5,9 @@
     margin: 15px;
     cursor: pointer;
 }
+.icons_header {
+    width: 35px;
+}
 .header_line {
     width: 100%;
     height: 50px;

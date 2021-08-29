@@ -10,8 +10,9 @@
     display: flex;
     flex-direction: row; 
     border-right: 1px solid  rgb(179, 170, 170);
+    padding-top: 20px;
     flex-grow: 1;
-    padding: 10px;
+    position: relative;
 }
 .found_good {
     width: 183px;
@@ -28,6 +29,9 @@
     top: 6px;
     margin-left: -7px;
     margin-right: 14px;
+}
+#rotate_price , #rotate_type {
+   transition: transform 200ms;
 }
 .product_list {
     display: grid;
@@ -46,4 +50,31 @@ div.product_list img {
 }
 .good_card:hover {
     border: 1px solid  rgb(179, 170, 170); ;
+}
+.select_price_field , .select_type_field , .select_size_field , .select_color_field , .select_male_field{
+    position: absolute;
+    top: 57px;
+    left: 0px;
+    background-color:#f4f4f4 ;
+    display: none;
+    flex-direction: column;
+    width: 200px;
+}
+.select_type_field {
+    left: 60px;
+}
+.select_color_field {
+    left: 270px;
+}
+.select_male_field {
+    left: 350px 
+}
+.price_select_item, .type_select_item, .color_select_item , .male_select_item{
+    margin: 5px;
+}
+.price_choice , .type_choice , .color_choice , .male_choice , .size_choice {
+    cursor: pointer;
+}
+.displayflex {
+    display: flex;
 }

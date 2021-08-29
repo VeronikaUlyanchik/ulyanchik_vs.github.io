@@ -35,10 +35,10 @@
                <div class="links"><p id="kids_btn" onclick="openCloseMenuSale()">Распродажа</p></div>
             </div>
             <div class="header_right">
-                <a href=""><span class="material-icons_header">account_circle</span></a>
-                <a href=""><span class="material-icons_header">favorite_border</span></a>
-                <a href=""><span class="material-icons_header">shopping_cart</span></a>
-                <a href=""><span class="material-icons_header search">search</span></a>
+                <a href=""><span class="material-icons_header"><img src="assets/account_circle_black_24dp.svg" alt="" class="icons_header"></span></a>
+                <a href=""><span class="material-icons_header"><img src="assets/favorite_border_black_24dp.svg" alt="" class="icons_header"></span></a>
+                <a href=""><span class="material-icons_header"><img src="assets/shopping_cart_black_24dp.svg" alt="" class="icons_header"></span></a>
+                <a href=""><span class="material-icons_header search"><img src="assets/search_white_24dp.svg" alt="" class="icons_header"></span></a>
             </div>
         </div>
         <div class="header_menu">
@@ -127,28 +127,97 @@
 
 
 
-        <div class="main_collection_page">
+        <div class="main_collection_page" id="main_collection_page">
             <h2 class="h2_main">Кеды</h2>
             <div class="filter_panel">
                 <div class="found_good">Найдено 36 товаров</div>
-                <div class="fiter">
-                    <div>Цена <span class="material-icons drop_down">
-                        arrow_drop_down</span> </div>
-                    <div>Тип товара <span class="material-icons drop_down">
-                        arrow_drop_down</span></div>
-                    <div>Размер <span class="material-icons drop_down">
-                        arrow_drop_down</span></div>
-                    <div>Цвет <span class="material-icons drop_down">
-                        arrow_drop_down</span></div>
-                    <div>Пол <span class="material-icons drop_down">
-                        arrow_drop_down</span></div>
-                    <div>Возраст <span class="material-icons drop_down">
-                        arrow_drop_down</span></div>
+                <div class="fiter" id="fiter">
+                    <div class="price_choice" id="price_choice" >Цена <span class="drop_down">
+                        <img id="rotate_price" src="assets/arrow_drop_down_black_24dp.svg" alt=""></span> </div>
+
+                        <div class="select_price_field" id="select_price_field" >
+                           <div class="price_select_item"> 
+                                <input type="radio" name="select-price" value="100" id="priceup100" />
+                                <label for="priceup100">До 100 BYN</label> </div>
+                            <div class="price_select_item"> 
+                                <input type="radio" name="select-price" value="200" id="priceup200"/>
+                            <label for="priceup200">100 BYN - 200 BYN</label></div>
+                            <div class="price_select_item"> 
+                                <input type="radio" name="select-price" value="300" id="priceup300"/>
+                            <label for="priceup300">200 BYN - 300 BYN</label></div>
+                            <div class="price_select_item"> 
+                                <input type="radio" name="select-price" value="400" id="pricefrom300"/>
+                            <label for="pricefrom300">Более 300 BYN</label></div>
+                        </div>
+
+
+                    <div class="type_choice" id="type_choice">Тип товара <span class="drop_down">
+                        <img id="rotate_type" src="assets/arrow_drop_down_black_24dp.svg" alt=""></div>
+                        <div class="select_type_field" id="select_type_field">
+                            <div class="type_select_item"> 
+                                 <input type="checkbox" name="select-type" value="short" id="short" />
+                                 <label for="short">Низкие кеды</label> </div>
+                             <div class="type_select_item"> 
+                                 <input type="checkbox" name="select-type" value="long" id="long"/>
+                             <label for="long">Высокие</label></div>
+                             <div class="type_select_item"> 
+                                 <input type="checkbox" name="select-type" value="platform" id="platform"/>
+                             <label for="platform">На платформе</label></div>
+                         </div>
+
+
+                    <div class="size_choice" id="size_choice">Размер <span class="drop_down">
+                        <img id="rotate_size" src="assets/arrow_drop_down_black_24dp.svg" alt=""></span> </div>
+                            <div class="select_size_field" id="select_size_field">
+
+                             </div>
+
+                    <div class="color_choice" id="color_choice">Цвет <span class="drop_down">
+                        <img  id="rotate_color" src="assets/arrow_drop_down_black_24dp.svg" alt=""></span> </div>
+
+                        <div class="select_color_field" id="select_color_field">
+                            <div class="color_select_item"> 
+                                 <input type="checkbox" name="select-color" value="black" id="black" />
+                                 <label for="black">Черный</label> </div>
+                             <div class="color_select_item"> 
+                                 <input type="checkbox" name="select-color" value="white" id="white"/>
+                             <label for="white">Белый</label></div>
+                             <div class="color_select_item"> 
+                                 <input type="checkbox" name="select-color" value="beige" id="beige"/>
+                             <label for="beige">Бежевый</label></div>
+                             <div class="color_select_item"> 
+                                <input type="checkbox" name="select-color" value="red" id="red"/>
+                            <label for="red">Красный</label></div>
+                            <div class="color_select_item"> 
+                                <input type="checkbox" name="select-color" value="multi" id="multi"/>
+                            <label for="multi">Мульти</label></div>
+                            <div class="color_select_item"> 
+                                <input type="checkbox" name="select-color" value="blue" id="blue"/>
+                            <label for="blue">Синий</label></div>
+                            <div class="color_select_item"> 
+                                <input type="checkbox" name="select-color" value="yellow" id="yellow"/>
+                            <label for="yellow">Желтый</label></div>
+                            <div class="color_select_item"> 
+                                <input type="checkbox" name="select-color" value="gray" id="gray"/>
+                            <label for="gray">Серый</label></div>
+                         </div>
+
+                    <div class="male_choice" id="male_choice">Пол <span class="drop_down">
+                        <img id="rotate_male" src="assets/arrow_drop_down_black_24dp.svg" alt=""></span> </div>
+
+                        <div class="select_male_field" id="select_male_field">
+                            <div class="male_select_item" id="male_select_item"> 
+                                 <input type="checkbox" name="select-male" value="man" id="man" />
+                                 <label for="man"> Мужской </label> </div>
+                             <div class="type_select_item"> 
+                                 <input type="checkbox" name="select-male" value="unisex" id="unisex"/>
+                             <label for="unisex">Унисекс</label></div>
+                         </div>
                 </div>
                 <div class="sort">Сортировка : По умолчанию</div>
             </div>
         </div>
-        <div class="product_list">
+        <div class="product_list" id="product_list">
             <a href="page_one_good.html" class="good_card">
                 <img src="assets/collection/m7650_1.jpg" alt="">
                 <p>Chuck Taylor All Star Classic High-Top</p>
@@ -220,8 +289,8 @@
                         Подпишись на новости о новых коллекциях, акциях и многом другом
                     </h4>
                     <form method="POST" class="form">
-                        <input type="email" id="email" placeholder="Ваша электронная почта" class="email_input">
-                        <label for="email">
+                        <input type="email" id="email_footer" placeholder="Ваша электронная почта" class="email_input">
+                        <label for="email_footer">
                             <img src="assets/Label.PNG" alt="">
                         </label>
                     </form>
@@ -262,5 +331,6 @@
             </div>
         </div>
         <script src="js/main-page/js-menu.js"></script>
+        <script src="js/js_page_collection/js_filter.js"></script>
 </body>
 </html>

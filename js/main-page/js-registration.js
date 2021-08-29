@@ -8,10 +8,12 @@ function openLoginForm () {
     loginForm.classList.remove('login_translate_hidden')
     backgroundRegistr.classList.remove('background')
     registrationForm.classList.remove('registration_translate')
+    document.body.classList.remove('overflow_hidden')
 }
 else {
     loginForm.classList.add('login_translate')
     backgroundRegistr.classList.add('background')
+    document.body.classList.add('overflow_hidden')
     menuMen.classList.remove('menu-flex-men')
     menuKids.classList.remove('menu-flex-kids')
     menuSale.classList.remove('menu-flex-sale')

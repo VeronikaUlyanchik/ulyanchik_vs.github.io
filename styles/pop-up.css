@@ -50,9 +50,13 @@ flex-direction: row;
 .background {
     transform: translate(0%);
 }
+.overflow_hidden {
+    overflow: hidden;
+    padding-right: 15px;
+}
 #close_btn {
     position: absolute;
-    right: 0px;
-    font-size: 30px;
+    right:20px;
+    font-size: 40px;
     cursor: pointer;
 }
