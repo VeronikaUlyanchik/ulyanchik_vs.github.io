@@ -12,6 +12,10 @@
     transform: translateX(0);
     transition: transform ease-in 0.2s
 }
+.chuck70_position {
+    position: relative;
+    left: 0px;
+}
 .good_card_trends img {
     width: 100%;
     display: block;

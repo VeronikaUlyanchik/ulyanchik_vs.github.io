@@ -22,12 +22,17 @@ div.email_part h4 {
 .form {
     position: relative;
 }
+.email_footer_logo {
+    width: 69px;
+    transition: width 3s;
+}
 .email_input {
     height: 60px;
     position: relative;
-    top: -33px;px;
+    top: -33px;
     margin-left: 20px;
     margin-right: 0;
+    transition: 3s;
 }
 .terms_part {
     border: 1px solid gray;

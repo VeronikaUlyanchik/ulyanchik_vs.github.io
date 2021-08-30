@@ -1,3 +1,7 @@
+a {
+    text-decoration: none;
+    color: black;
+}
 .h2_main {
     margin-left: 65px;
 }
@@ -13,6 +17,7 @@
     padding-top: 20px;
     flex-grow: 1;
     position: relative;
+    z-index: 99;
 }
 .found_good {
     width: 183px;
@@ -41,15 +46,17 @@
 }
 div.product_list img {
     width: 100%;
-    display: block;
     object-fit: cover;
 }
 .good_card {
-    text-decoration: none;
-    color: black;
+    position: relative;
+    border: 1px solid white;
 }
 .good_card:hover {
-    border: 1px solid  rgb(179, 170, 170); ;
+    border: 1px solid  rgb(179, 170, 170);
+}
+div.good_card:hover > div.color_select_btn{
+    display: block;
 }
 .select_price_field , .select_type_field , .select_size_field , .select_color_field , .select_male_field{
     position: absolute;
@@ -77,4 +84,61 @@ div.product_list img {
 }
 .displayflex {
     display: flex;
+}
+.color_select_btn {
+    position: absolute;
+    bottom: 0px;
+    height: 30px;
+    width: 100%;
+    background: white;
+    text-align: center;
+    display: none;
+}
+.small_text_colors {
+    color: #b1a7a7;
+    font-size: 14px;
+}
+.color_button {
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+}
+.whiteBtn {
+    background: white;
+    border: 1px solid gray;
+}
+.vineBtn {
+    background:#5c151d;
+    border: 1px solid #5c151d;
+}
+.redBtn {
+    background:red;
+    border: 1px solid red;
+}
+.greenBtn {
+    background:#312805;
+    border: 1px solid #312805;
+}
+.blackBtn {
+    background: black;
+    border: 1px solid black;
+}
+.blueBtn {
+    background: blue;
+    border: 1px solid blue;
+}
+.lightblueBtn {
+    background-color:#57a09d ;
+    border: 1px solid #57a09d;
+}
+.turquoiseBtn {
+    background-color:#7bc2a6;
+    border: 1px solid #7bc2a6;
+}
+.grayBtn{
+    background-color:#d0cdc5;  
+    border: 1px solid #d0cdc5;
+}
+.hidden {
+    display: none;
 }

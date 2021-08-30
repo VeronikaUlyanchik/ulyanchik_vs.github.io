@@ -1,0 +1,9 @@
+@media all and (max-width: 1230px){
+    .email_input {
+        height: 40px;
+        top: -17px;
+    }
+    .email_footer_logo {
+        width: 40px;
+    }
+}

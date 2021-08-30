@@ -3,7 +3,7 @@ const width=205;
 const nextBtn = document.getElementById('next');
 const previousBtn = document.getElementById('previous');
 let currentIndex = 0;
-const lastIndex = -4;
+const lastIndex = -5;
 previousBtn.setAttribute('disabled', 'disabled');
 
 nextBtn.addEventListener('click',scrollNext);

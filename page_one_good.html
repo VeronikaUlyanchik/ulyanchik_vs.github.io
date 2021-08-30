@@ -13,6 +13,8 @@
     <link rel="stylesheet" type="text/css" href="styles/footer.css">
     <link rel="stylesheet" type="text/css" href="styles/main-page1good.css">
     <link rel="stylesheet" type="text/css" href="styles/pop-up.css">
+    <link rel="stylesheet" type="text/css" href="styles/footer_media.css">
+    <link rel="stylesheet" type="text/css" href="styles/header_media.css">
 </head>
 <style>
     body {
@@ -197,20 +199,48 @@
         <div class="table_choose_size">
             <p>Выберите размер</p>
             <div class="size_table">
-                <div class="size_number" id="35" onclick="chooseSize(35)">35</div>
-                <div class="size_number" id="36" onclick="chooseSize(36)">36</div>
-                <div class="size_number" id="37" onclick="chooseSize(37)">37</div>
-                <div class="size_number" id="38" onclick="chooseSize(38)">38</div>
-                <div class="size_number" id="39" onclick="chooseSize(39)">39</div>
-                <div class="size_number" id="39.5" onclick="chooseSize(39.5)">39.5</div>
-                <div class="size_number" id="40" onclick="chooseSize(40)">40</div>
-                <div class="size_number" id="41" onclick="chooseSize(41)">41</div>
-                <div class="size_number" id="42" onclick="chooseSize(42)">42</div>
-                <div class="size_number" id="43" onclick="chooseSize(43)">43</div>
-                <div class="size_number" id="44" onclick="chooseSize(44)">44</div>
-                <div class="size_number" id="45" onclick="chooseSize(45)">45</div>
-                <div class="size_number" id="46" onclick="chooseSize(46)">46</div>
-                <div class="size_number" id="47" onclick="chooseSize(47)">47</div>
+               
+                    <label for="size35" class="size_cell"> 
+                        <input type="radio" name="size_number" class="size_number" value="35" onchange="chooseSize(this)" id="size35"/>35
+                    </label> 
+                    <label for="size36"class="size_cell">
+                        <input type="radio" name="size_number" class="size_number" value="36" onchange="chooseSize(this)" id="size36"/>36
+                    </label>
+                    <label for="size37"class="size_cell"> 
+                        <input type="radio" name="size_number" class="size_number" value="37" onchange="chooseSize(this)" id="size37"/>37
+                    </label>
+                    <label for="size38"class="size_cell">
+                        <input type="radio" name="size_number" class="size_number" onchange="chooseSize(this)" id="size38"/>38
+                    </label>
+                    <label for="size39"class="size_cell">
+                        <input type="radio" name="size_number" class="size_number" onchange="chooseSize(this)" id="size39"/>39
+                    </label>
+                    <label for="size40" class="size_cell">
+                        <input type="radio" name="size_number" class="size_number" onchange="chooseSize(this)" id="size40"/> 40
+                    </label>
+                    <label for="size41"class="size_cell">
+                        <input type="radio" name="size_number" class="size_number" onchange="chooseSize(this)" id="size41"/>41
+                    </label>                  
+                    <label for="size42"class="size_cell">
+                        <input type="radio" name="size_number" class="size_number" onchange="chooseSize(this)" id="size42"/>42
+                    </label>
+                    <label for="size43"class="size_cell">
+                        <input type="radio" name="size_number" class="size_number" onchange="chooseSize(this)" id="size43"/>43
+                    </label>
+                    <label for="size44"class="size_cell">
+                        <input type="radio" name="size_number" class="size_number" onchange="chooseSize(this)" id="size44"/>44
+                    </label>
+                    <label for="size45"class="size_cell">
+                        <input type="radio" name="size_number" class="size_number" onchange="chooseSize(this)" id="size45"/>45
+                    </label>
+                    <label for="size46"class="size_cell">
+                        <input type="radio" name="size_number" class="size_number" onchange="chooseSize(this)" id="size46"/>46
+                    </label>
+                    <label for="size47"class="size_cell"> 
+                        <input type="radio" name="size_number" class="size_number" onchange="chooseSize(this)" id="size47"/> 47
+                    </label>
+      
+                
             </div>
             <h2>290 BYN</h2>
             <div class="choose_and_add_in_favor">
@@ -237,8 +267,9 @@
             <form method="POST" class="form">
                 <input type="email" id="email_footer" placeholder="Ваша электронная почта" class="email_input">
                 <label for="email_footer">
-                    <img src="assets/Label.PNG" alt="">
+                    <img class="email_footer_logo" src="assets/Label.PNG" alt="">
                 </label>
+            </form>
             </form>
         </div>
         <div class="terms_part">

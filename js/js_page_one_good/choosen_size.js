@@ -1,8 +1,12 @@
-'use strict';
+
+const sizeCell = document.querySelectorAll('.size_cell');
+const sizeCellww = document.querySelectorAll('.size_number');
+
 function chooseSize (size) {
-    if (document.getElementById(size).classList.contains('js-size-choosen')){
-    document.getElementById(size).classList.remove('js-size-choosen')
-    } else {
-        document.getElementById(size).classList.add('js-size-choosen')
-    }
+    const idSize = size.id
+    const valSize = size.value
+    const yourObject = document.getElementById(idSize);
+    const parentObject = yourObject.parentNode;
+    parentObject.style.background = "#000";
+    parentObject.style.color= "white";
 }

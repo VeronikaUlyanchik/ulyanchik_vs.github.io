@@ -8,12 +8,13 @@
     color: black;
     margin: 0px;
     position: relative;
-    top: 10px;
+    top: 7px;
 }
 .main_picture_and_link {
    margin: 0 80px;
    min-width: 900px;
    position: relative;
+   transition: 2s;
  }
 div.picture_main img{
     width: 100%;
@@ -78,6 +79,7 @@ div.types_snikers_part img:hover{
 div.find_styles_part h1, div.trends_now h1 , div.clothers_part h1, div.accessories_part h1{
     margin-left: 30px;
     font-size: 45px;
+    transition: 3s;
 }
 div.find_styles_part  a{
     overflow: hidden;
@@ -100,6 +102,7 @@ div.find_styles_part img:hover{
     margin: 0 80px;
     min-width: 900px;
     position: relative;
+    transition: 2s;
 }
 .flowers_link_info {
     bottom: 160px;
@@ -107,6 +110,10 @@ div.find_styles_part img:hover{
 .trends_now ,.clothers_part {
     margin-left: 30px;
     position: relative;
+}
+.look_all_label {
+   position: relative;
+   top:-20px;
 }
 div.trends_now a, div.clothers_part a , div.accessories_part a{
     padding: 15px;
@@ -120,6 +127,7 @@ div.trends_now a, div.clothers_part a , div.accessories_part a{
     position: relative;
     margin: 0 80px;
     min-width: 940px;
+    transition: 2s;
 }
 .clothers_links {
     grid-template-columns: repeat(auto-fill, minmax(180px ,21%)); 
@@ -144,6 +152,7 @@ div.clothers_links h5 {
 .h1_open_forYS_part {
     margin-left: 67px;
     font-size: 45px;
+    transition: 2s;
 }
 .table_links {
     display: flex;
