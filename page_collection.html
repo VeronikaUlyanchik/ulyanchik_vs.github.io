@@ -37,10 +37,15 @@
                <div class="links"><p id="kids_btn" onclick="openCloseMenuSale()">Распродажа</p></div>
             </div>
             <div class="header_right">
-                <a href=""><span class="material-icons_header"><img src="assets/account_circle_black_24dp.svg" alt="" class="icons_header"></span></a>
-                <a href=""><span class="material-icons_header"><img src="assets/favorite_border_black_24dp.svg" alt="" class="icons_header"></span></a>
-                <a href=""><span class="material-icons_header"><img src="assets/shopping_cart_black_24dp.svg" alt="" class="icons_header"></span></a>
-                <a href=""><span class="material-icons_header search"><img src="assets/search_white_24dp.svg" alt="" class="icons_header"></span></a>
+                <div class="search_field" id="searchBox" >
+                    <input class="search_input" type="text" placeholder="Что вы хотите найти?" id="searchInput"> 
+                    <Label for="searchInput"><img src="assets/search_gray_24dp.svg" alt="" id="search_label_input"></Label>
+                </div>
+                <a><span class="material-icons_header" onclick="openLoginForm()"><img src="assets/account_circle_black_24dp.svg" alt="" class="icons_header"></span></a>
+                    <a href=""><span class="material-icons_header"><img src="assets/favorite_border_black_24dp.svg" alt="" class="icons_header"></span></a>
+                    <a href=""><span class="material-icons_header"><img src="assets/shopping_cart_black_24dp.svg" alt="" class="icons_header"></span></a>
+                    <a style="margin-top: -2px;"><span class="material-icons_header search"><img id="searchBtn"  src="assets/search_white_24dp.svg" alt="" class="icons_header">
+                        <img id="closeSearchBtn" src="assets/close_white_24dp.svg" alt="" class="icons_header close_none"></span></a>
             </div>
         </div>
         <div class="header_menu">
@@ -429,5 +434,6 @@
         <script src="js/main-page/js-menu.js"></script>
         <script src="js/js_page_collection/js_filter.js"></script>
         <script src="js/js_page_collection/color_select.js"></script>
+        <script src="js/main-page/js-search.js"></script>
 </body>
 </html>
