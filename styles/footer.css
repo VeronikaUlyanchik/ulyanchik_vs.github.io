@@ -1,7 +1,8 @@
 .footer_upper {
     display: flex;
     flex-direction: row;
-    margin: 70px 30px;
+    margin-top: 70px;
+    background-color: #f4f4f4;
     justify-content: space-between;
 }
 .email_part {

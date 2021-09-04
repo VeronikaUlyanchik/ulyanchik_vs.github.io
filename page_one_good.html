@@ -23,7 +23,7 @@
         overflow-y: scroll;
         scroll-behavior: smooth;
     }
-    /* Не работает скролл и не работает стики */
+   
 </style>
 <body>
    <div class="container">
@@ -187,75 +187,75 @@
             </div>
     </div>
     <div class="info_section">
-        <h2> Chuck 70 Hawaian Shirt High Top</h2>
-        <h3 class="composition">ВЕРХ: 55% ХЛОПОК НИЗ: 100% РЕЗИНА</h3>
-        <h3>О товаре</h3>
-        <p>ТРОПИЧЕСКИЙ ВИНТАЖ Chuck 70 Tropical Shirt - торжество винтажного островного стиля...<a href="#outline">Описание</a></p> 
-        <hr>
-        <div class="multi_color">
-            <p>Цвет</p>
-            <P class="article">Артикул: 58482568</P>
-        </div>
-        <div class="choose_color">
-            <img src="assets/chuck 70/main_chuck70.jpg" alt="chuck 70">
-            <p></p>
-        </div>
-        <hr>
-        <div class="table_choose_size">
-            <p>Выберите размер</p>
-            <div class="size_table">
-               
-                    <label for="size35" class="size_cell"> 
-                        <input type="radio" name="size_number" class="size_number" value="35" onchange="chooseSize(this)" id="size35"/>35
-                    </label> 
-                    <label for="size36"class="size_cell">
-                        <input type="radio" name="size_number" class="size_number" value="36" onchange="chooseSize(this)" id="size36"/>36
-                    </label>
-                    <label for="size37"class="size_cell"> 
-                        <input type="radio" name="size_number" class="size_number" value="37" onchange="chooseSize(this)" id="size37"/>37
-                    </label>
-                    <label for="size38"class="size_cell">
-                        <input type="radio" name="size_number" class="size_number" onchange="chooseSize(this)" id="size38"/>38
-                    </label>
-                    <label for="size39"class="size_cell">
-                        <input type="radio" name="size_number" class="size_number" onchange="chooseSize(this)" id="size39"/>39
-                    </label>
-                    <label for="size40" class="size_cell">
-                        <input type="radio" name="size_number" class="size_number" onchange="chooseSize(this)" id="size40"/> 40
-                    </label>
-                    <label for="size41"class="size_cell">
-                        <input type="radio" name="size_number" class="size_number" onchange="chooseSize(this)" id="size41"/>41
-                    </label>                  
-                    <label for="size42"class="size_cell">
-                        <input type="radio" name="size_number" class="size_number" onchange="chooseSize(this)" id="size42"/>42
-                    </label>
-                    <label for="size43"class="size_cell">
-                        <input type="radio" name="size_number" class="size_number" onchange="chooseSize(this)" id="size43"/>43
-                    </label>
-                    <label for="size44"class="size_cell">
-                        <input type="radio" name="size_number" class="size_number" onchange="chooseSize(this)" id="size44"/>44
-                    </label>
-                    <label for="size45"class="size_cell">
-                        <input type="radio" name="size_number" class="size_number" onchange="chooseSize(this)" id="size45"/>45
-                    </label>
-                    <label for="size46"class="size_cell">
-                        <input type="radio" name="size_number" class="size_number" onchange="chooseSize(this)" id="size46"/>46
-                    </label>
-                    <label for="size47"class="size_cell"> 
-                        <input type="radio" name="size_number" class="size_number" onchange="chooseSize(this)" id="size47"/> 47
-                    </label>
-      
-                
+        <div class="sticky">
+            <h2> Chuck 70 Hawaian Shirt High Top</h2>
+            <h3 class="composition">ВЕРХ: 55% ХЛОПОК НИЗ: 100% РЕЗИНА</h3>
+            <h3>О товаре</h3>
+            <p>ТРОПИЧЕСКИЙ ВИНТАЖ Chuck 70 Tropical Shirt - торжество винтажного островного стиля...<a href="#outline">Описание</a></p> 
+            <hr>
+            <div class="multi_color">
+                <p>Цвет</p>
+                <P class="article">Артикул: 58482568 <span id="sizeValue">-35</span></P>
             </div>
-            <h2>290 BYN</h2>
-            <div class="choose_and_add_in_favor">
-                <button class="choose_snickers"> Добавить в корзину</button>
-                <button class="add_in_favor" onclick="addFavor()"> <span id="not_favor" class="material-icons">
-                    favorite_border
-                    </span>
-                    <span id="favor" class="material-icons favor">
-                        favorite
-                        </span></button>
+            <div class="choose_color">
+                <img src="assets/chuck 70/main_chuck70.jpg" alt="chuck 70">
+                <p></p>
+            </div>
+            <hr>
+            <div class="table_choose_size">
+                <p>Выберите размер</p>
+                <div class="size_table">
+                
+                        <label for="size35" class="size_cell"> 
+                            <input type="radio" name="size_number" class="size_number" value="35" onchange="chooseSize(this)" id="size35"/>35
+                        </label> 
+                        <label for="size36"class="size_cell">
+                            <input type="radio" name="size_number" class="size_number" value="36" onchange="chooseSize(this)" id="size36"/>36
+                        </label>
+                        <label for="size37"class="size_cell"> 
+                            <input type="radio" name="size_number" class="size_number" value="37" onchange="chooseSize(this)" id="size37"/>37
+                        </label>
+                        <label for="size38"class="size_cell">
+                            <input type="radio" name="size_number" class="size_number" value="38" onchange="chooseSize(this)" id="size38"/>38
+                        </label>
+                        <label for="size39"class="size_cell">
+                            <input type="radio" name="size_number" class="size_number" value="39" onchange="chooseSize(this)" id="size39"/>39
+                        </label>
+                        <label for="size40" class="size_cell">
+                            <input type="radio" name="size_number" class="size_number" value="40" onchange="chooseSize(this)" id="size40"/> 40
+                        </label>
+                        <label for="size41"class="size_cell">
+                            <input type="radio" name="size_number" class="size_number" value="41" onchange="chooseSize(this)" id="size41"/>41
+                        </label>                  
+                        <label for="size42"class="size_cell">
+                            <input type="radio" name="size_number" class="size_number" value="42" onchange="chooseSize(this)" id="size42"/>42
+                        </label>
+                        <label for="size43"class="size_cell">
+                            <input type="radio" name="size_number" class="size_number" value="43" onchange="chooseSize(this)" id="size43"/>43
+                        </label>
+                        <label for="size44"class="size_cell">
+                            <input type="radio" name="size_number" class="size_number" value="44" onchange="chooseSize(this)" id="size44"/>44
+                        </label>
+                        <label for="size45"class="size_cell">
+                            <input type="radio" name="size_number" class="size_number" value="45" onchange="chooseSize(this)" id="size45"/>45
+                        </label>
+                        <label for="size46"class="size_cell">
+                            <input type="radio" name="size_number" class="size_number" value="46" onchange="chooseSize(this)" id="size46"/>46
+                        </label>
+                        <label for="size47"class="size_cell"> 
+                            <input type="radio" name="size_number" class="size_number" value="47" onchange="chooseSize(this)" id="size47"/> 47
+                        </label>
+                </div>
+                <h2>290 BYN</h2>
+                <div class="choose_and_add_in_favor">
+                    <button class="choose_snickers"> Добавить в корзину</button>
+                    <button class="add_in_favor" onclick="addFavor()"> <span id="not_favor" class="material-icons">
+                        favorite_border
+                        </span>
+                        <span id="favor" class="material-icons favor">
+                            favorite
+                            </span></button>
+                </div>
             </div>
         </div>
     </div>

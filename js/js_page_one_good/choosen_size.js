@@ -1,12 +1,17 @@
-
 const sizeCell = document.querySelectorAll('.size_cell');
-const sizeCellww = document.querySelectorAll('.size_number');
+const sizeValueField = document.getElementById('sizeValue'); 
+
 
 function chooseSize (size) {
+    sizeCell.forEach(n => n.classList.remove('js-size-choosen'))
     const idSize = size.id
-    const valSize = size.value
     const yourObject = document.getElementById(idSize);
     const parentObject = yourObject.parentNode;
-    parentObject.style.background = "#000";
-    parentObject.style.color= "white";
+    parentObject.classList.add('js-size-choosen');
+    getArticleSize(size) 
+}
+
+function getArticleSize(size) {
+    const valueSize = size.value
+    sizeValueField.innerHTML = `-${valueSize}`;
 }

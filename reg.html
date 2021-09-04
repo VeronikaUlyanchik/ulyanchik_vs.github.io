@@ -15,7 +15,10 @@
     <link rel="stylesheet" type="text/css" href="styles/product_list_intrends.css">
     <link rel="stylesheet" type="text/css" href="styles/pop-up.css">
     <link rel="stylesheet" type="text/css" href="styles/header_media.css">
+    <link rel="stylesheet" type="text/css" href="styles/main_media.css">
+    <link rel="stylesheet" type="text/css" href="styles/footer_media.css">
     <link rel="stylesheet" type="text/css" href="styles/registration_form.css">
+    <link rel="stylesheet" type="text/css" href="styles/busket.css">
 </head>
 <style>
      body {
@@ -25,47 +28,21 @@
     }
 </style>
 <body>
-    <div class="login" id="login_form" >
-        <div class="btns_log_reg">
-        <div class="login_button">Вход</div>
-        <div id="registration_button">Регистрация</div>
+    <div class="container-backet">
+        <div class="busketInfo">
+            <div class="goodsExistInfo">0 товаров в вашей корзине</div>
+            <div class="closeBusketBtn"><img src="assets/close_gray_24dp.svg" alt=""></div>
         </div>
-    <form class="login_form">
-        <label for="email">Электронная почта</label> <br>
-        <input type="email" id="email" class="input_email" required> <br>
-        <label for="password">Пароль</label> <br>
-        <input type="password" id="password" class="input_password" required> <br>
-        <label for="remember" class="label_remember"> Запомнить меня</label>
-        <input id="remember" type="checkbox" name="remember" value="yes" checked=""> <br>
-        <button id="login">
-            Вход
-        </button>
-    </form>
-    <div> или <button id="create_acc" >СОЗДАТЬ УЧЕТНУЮ ЗАПИСЬ</button></div>
+        <div class="goodBusketField" >
+            <p>
+                Ваша корзина пока пустая.
+            </p>
+
+        </div>
+
+
     </div>
 
-
-
-    <div class="registration">
-        <div class="btns_log_reg">
-        <div id="login_button">Вход</div>
-        <div class="registration_button">Регистрация</div>
-        </div>
-    <form class="login_form">
-        <label for="email">Электронная почта</label> <br>
-        <input type="email" id="email" class="input_email" required> <br>
-        <label for="name"> Имя </label> <label for="surname" class="label_surname"> Фамилия</label> <br>
-        <input type="text" id="name"> <input type="text" id="surname"> <br>
-
-        <label for="password">Пароль</label> <br>
-        <input type="password" id="password" class="input_password" required> <br>
-        <label for="remember" class="label_remember"> Я принимаю условия соглашения</label>
-        <input id="remember" type="checkbox" name="remember" value="yes" checked=""> <br>
-        <button id="registrate">
-            Зарегистрироваться
-        </button>
-    </form>
-    <div> или <button id="login_acc" >ВОЙТИ ПОД СВОЕЙ УЧЕТНОЙ ЗАПИСЬЮ</button></div>
-    </div>
+<script src="js/main-page/js-busket.js"></script>
 </body>
 </html>

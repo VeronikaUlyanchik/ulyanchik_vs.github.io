@@ -1,8 +1,8 @@
 .material-icons_header {
-    font-size: 34px;
     color: black;
     margin: 15px;
     cursor: pointer;
+    display: flex;
 }
 .icons_header {
     width: 35px;
@@ -53,8 +53,8 @@ div.header_right a {
     background-color: black;
     color: white;
     margin: 0;
-    padding: 15px;
     position: relative;
+    cursor: pointer;
 }
 .header_menu {
     display: flex;
@@ -87,6 +87,7 @@ div.links_header_menu p {
     font-size: 17px;
     transition: width 1s;
     border: none;
+    padding-left: 10px;
 }
 .close_none {
     display: none;
@@ -95,4 +96,7 @@ div.links_header_menu p {
         width: 60px;
         display: none;
         cursor: pointer;
+}
+#searchBtn , #closeSearchBtn{
+    padding: 15px;
 }

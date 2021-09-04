@@ -1,0 +1,29 @@
+.container-backet {
+    position: absolute;
+    width: 350px;
+    height: 900px;
+    background-color: white;
+}
+.busketInfo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+}
+.goodsExistInfo {
+    border: 1px solid #e9e9e9;
+    border-top: none;
+    padding: 15px;
+    flex-grow: 1;
+}
+.closeBusketBtn {
+    border: 1px solid #e9e9e9 ;
+    border-left: none;
+    border-top: none;
+    padding: 9px;
+    width: 60px;
+}
+div.closeBusketBtn img {
+    width: 49px;
+    height: 49px;
+}

@@ -56,9 +56,8 @@ div.outline p ,div.outline ul {
     line-height: 24px; 
 }
 .info_section {
-    position: sticky;
-    top: 0;
     width: 40%;
+    margin-right: 40px;
 }
 div.info_section a{
     color: black;
@@ -68,6 +67,10 @@ div.info_section a{
     color:  #9a9696;
     font-size: 15px;
 }
+.sticky {
+    position: sticky;
+    top: 20px;
+}
 .multi_color {
     display: flex;
     flex-direction: row;
@@ -76,7 +79,7 @@ div.info_section a{
 div.multi_color~p{
     font-size: 14px;
 }
-.article {
+.article, #sizeValue {
     font-size: 10px;
     color:#9a9696;
 }
@@ -115,11 +118,13 @@ div.choose_color:hover p {
     cursor: pointer;
     border: 1px solid rgb(223, 219, 219);
     outline: none;
+    display: none;
 }
 .size_cell{
     border: 1px solid rgb(223, 219, 219);
     cursor: pointer;
-    padding: 10px;
+    padding: 15px 10px;
+    text-align: center;
 }
 .size_cell:hover {
     color: rgb(243, 206, 151);
