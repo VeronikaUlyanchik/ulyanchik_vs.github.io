@@ -18,6 +18,7 @@
     <link rel="stylesheet" type="text/css" href="styles/main_media.css">
     <link rel="stylesheet" type="text/css" href="styles/footer_media.css">
     <link rel="stylesheet" type="text/css" href="styles/registration_form.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
 </head>
 <style>
     body {
@@ -27,6 +28,11 @@
         width: 100%;
         overflow-x: hidden;
     }
+    *,
+*::before,
+*::after {
+  box-sizing: content-box;
+}
 </style>
 <body>
     <div class="header_line"></div>
@@ -173,26 +179,74 @@
         </form>
         <div> или <button id="login_acc" onclick="openLoginFormFromRegForm()">ВОЙТИ ПОД СВОЕЙ УЧЕТНОЙ ЗАПИСЬЮ</button></div>
         </div>
-
         <div class="main_picture_and_link">
-            <div class="picture_main">
-                <img src="assets/banner_drkshdw.jpg" alt="Converse X">
-            </div>
-            <div class="main_link_info">
-                <h2> Converse X 
-                    <br>
-                    DRKSHDW
-                </h2>
-                <div class="info_snikers">
-                    Это смелое переосмысление уличной <br>классики. <br>
-                    Рик Оуэнс создает Chuck 70, уникальные в своем роде.<br>
-                    Вневременной силуэт в стиле панк-кутюр.
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators" id="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
                 </div>
-                    <a class="link_button_main" href="page_collection.html">
-                        Смотреть коллекцию
-                    </a> 
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="assets/banner_drkshdw.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block" id="carousel-caption">
+                            <div class="main_link_info">
+                                <h2> Converse X 
+                                    <br>
+                                    DRKSHDW
+                                </h2>
+                                <div class="info_snikers">
+                                    Это смелое переосмысление уличной <br>классики. <br>
+                                    Рик Оуэнс создает Chuck 70, уникальные в своем роде.<br>
+                                    Вневременной силуэт в стиле панк-кутюр.
+                                </div>
+                                    <a class="link_button_main" href="page_collection.html">
+                                        Смотреть коллекцию
+                                    </a> 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/D-CONVERSE-FA21-HP-AVAILABLE-NOW-P2-SPACE-JAM.jpg" class="d-block w-100 secondPic" alt="...">
+                        <div class="carousel-caption d-none d-md-block" id="carousel-caption">
+                            <div class="main_link_info">
+                                <h2> Converse 
+                                    <br>
+                                    x Space Jam: 
+                                    <br>
+                                    A New Legacy
+                                </h2>
+                                <div class="info_snikers">
+                                    Официально: Tune Squad снова в действии <br> с новой коллекцией иконок Converse <br> и образами с ног до головы.
+                                </div>
+                        <a class="link_button_main" href="page_collection.html">
+                            Смотреть коллекцию
+                        </a> 
+                        </div>
+                    </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/HP_Desktop_en.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <div class="main_link_info">
+                                <a class="link_button_main" href="page_collection.html">
+                                Смотреть коллекцию</a> 
+                            </div>
+                        </div>
+                        </div>
+                    </div>
             </div>
-        </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"  data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Предыдущий</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"  data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Следующий</span>
+              </button>
+            </div>
+    </div>
+
         <div class="types_snikers_part">
             <a href="">
                 <img src="assets/converse-visokye-may.jpg">
@@ -465,5 +519,6 @@
     <script src="js/main-page/js-registration.js"></script>
     <script src="js/main-page/producy_carousel.js"></script>
     <script src="js/main-page/js-search.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
 </body>
 </html>

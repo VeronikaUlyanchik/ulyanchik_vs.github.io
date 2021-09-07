@@ -204,3 +204,16 @@ div.table_links_small_box a {
     text-decoration: none;
     color: black;
 }
+#carousel-caption {
+    position: absolute;
+    right: 16%;
+    bottom: 0.25rem;
+    left: 0%;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+    color: #fff;
+    text-align: left;
+}
+.secondPic {
+    margin-top: 14px;
+}
