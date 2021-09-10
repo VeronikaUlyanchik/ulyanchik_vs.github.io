@@ -127,7 +127,7 @@ div.trends_now a, div.clothers_part a , div.accessories_part a{
     position: relative;
     margin: 0 80px;
     min-width: 940px;
-    transition: 2s;
+    /* transition: 2s; */
 }
 .clothers_links {
     grid-template-columns: repeat(auto-fill, minmax(180px ,21%)); 
@@ -211,9 +211,15 @@ div.table_links_small_box a {
     left: 0%;
     padding-top: 1.25rem;
     padding-bottom: 1.25rem;
-    color: #fff;
+    color: #060606;
     text-align: left;
 }
 .secondPic {
     margin-top: 14px;
+}
+#margin {
+    margin-bottom: 1.5rem;
+}
+#women_btn, #men_btn, #kids_btn, #sales_btn{
+ margin-top: 15px;
 }

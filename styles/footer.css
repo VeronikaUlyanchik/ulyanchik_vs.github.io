@@ -30,7 +30,6 @@ div.email_part h4 {
 .email_input {
     height: 60px;
     position: relative;
-    top: -33px;
     margin-left: 20px;
     margin-right: 0;
     transition: 3s;
@@ -67,4 +66,7 @@ div.footer_bottom h5 {
 }
 div.social_media a{
     text-decoration: none;
+}
+img, svg {
+    vertical-align: middle;
 }

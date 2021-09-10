@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Icons">
+    <link href="assets/bootstrap.min.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" type="text/css" href="styles/header.css">
     <link rel="stylesheet" type="text/css" href="styles/main.css">
     <link rel="stylesheet" type="text/css" href="styles/footer.css">
@@ -18,7 +19,6 @@
     <link rel="stylesheet" type="text/css" href="styles/main_media.css">
     <link rel="stylesheet" type="text/css" href="styles/footer_media.css">
     <link rel="stylesheet" type="text/css" href="styles/registration_form.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
 </head>
 <style>
     body {
@@ -42,7 +42,7 @@
             <div class="links"> <p id="women_btn" onclick="openCloseMenuWomen()">Женское</p></div>
             <div class="links"><p id="men_btn" onclick="openCloseMenuMen()">Мужское</p></div>
             <div class="links"><p id="kids_btn" onclick="openCloseMenuKids()">Детское</p></div>
-            <div class="links"><p id="kids_btn" onclick="openCloseMenuSale()">Распродажа</p></div>
+            <div class="links"><p id="sales_btn" onclick="openCloseMenuSale()">Распродажа</p></div>
         </div>
         <div class="header_right">
             <div class="search_field" id="searchBox" >
@@ -266,19 +266,19 @@
             <div class="type_find_styles">
                 <a href="page_one_good.html">
                     <img src="assets/Chuck 70 Hybrid Floral Low Top.jpg">
-                    <h5 class="types_snikers_text"> Chuck 70 Hybrid</h5>
+                    <h5 class="types_snikers_text" id="margin"> Chuck 70 Hybrid</h5>
                 </a>
                 <a href="page_one_good.html">
                     <img src="assets/Run Star Hike Archive Print Low Top.jpg">
-                    <h5 class="types_snikers_text"> Run Star </h5>
+                    <h5 class="types_snikers_text" id="margin"> Run Star </h5>
                 </a>
                 <a href="page_one_good.html">
                     <img src="assets/Converse X Golf Wang Chuck 70 Flames.jpg">
-                    <h5 class="types_snikers_text"> Chuck 70 </h5>
+                    <h5 class="types_snikers_text" id="margin"> Chuck 70 </h5>
                 </a>
                 <a href="page_one_good.html">
                     <img src="assets/Chuck Taylor All Star Floral Fusion Platform Low Top.jpg">
-                    <h5 class="types_snikers_text"> Chuck Taylor </h5>
+                    <h5 class="types_snikers_text" id="margin"> Chuck Taylor </h5>
                 </a>  
             </div>
         </div>
@@ -301,7 +301,7 @@
                     </a> 
             </div>
         </div>
-        <!-- Недоделала, чтобы листать можно было -->
+       
         <div class="trends_now">
             <h1>
                 Сейчас в тренде
@@ -383,7 +383,7 @@
                 <img src="assets/banner_august_platform_1.jpg" alt="">
             </div>
             <div class="platform_link_info main_link_info">
-                <h2> Обувь на
+                <h2 id="margin"> Обувь на
                     <br>
                     платформе
                 </h2>
@@ -400,19 +400,19 @@
             <div class="clothers_links">
                 <a href="">
                     <img src="assets/jackets.jpg" alt="">
-                    <h5 class="types_snikers_text"> Куртки</h5>
+                    <h5 class="types_snikers_text" id="margin"> Куртки</h5>
                 </a>
                 <a href="">
                     <img src="assets/hoodies.jpg" alt="">
-                    <h5 class="types_snikers_text"> Толстовки </h5>
+                    <h5 class="types_snikers_text" id="margin"> Толстовки </h5>
                 </a>
                 <a href="">
                     <img src="assets/pants.jpg" alt="">
-                    <h5 class="types_snikers_text"> Штаны</h5>
+                    <h5 class="types_snikers_text" id="margin"> Штаны</h5>
                 </a>
                 <a href="">
                     <img src="assets/tshirts.jpg" alt="">
-                    <h5 class="types_snikers_text"> Футболки</h5>
+                    <h5 class="types_snikers_text" id="margin"> Футболки</h5>
                 </a>  
             </div>
             <a href=""><span class="material-icons_main">arrow_right_alt</span>Смотреть все</a>

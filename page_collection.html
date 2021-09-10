@@ -227,10 +227,10 @@
         <div class="product_list" id="product_list">
             <div class="good_card">
                 <a href="page_one_good.html">
-                    <img src="assets/collection/m7650_1.jpg" alt="white" id="white_taylor">
-                    <img src="assets/collection/1pic_black.jpg" alt="black" class="hidden" id="black_taylor">
-                    <img src="assets/collection/1pic_blue.jpg" alt="blue" class="hidden" id="blue_taylor">
-                    <img src="assets/collection/1pic_red.jpg" alt="red" class="hidden" id="red_taylor">
+                    <span id="spanPicTaylorHigh">
+                        
+                    </span>
+                    <img src="assets/collection/m7650_1.jpg" alt="red" id="mainColorPicTaylorHigh">
                     <p>Chuck Taylor All Star Classic High-Top</p>
                     <p>230 BYN</p>
                     <p class="small_text_colors">4 Цвета</p>
@@ -245,8 +245,7 @@
             <div class="good_card">
                 <a href="page_one_good.html">
                     <span id="spanPicTwo">
-                        <!-- <img src="assets/collection/pic_white.jpg" alt="white">
-                        <img src="assets/collection/2pic_2.jpg" alt="black"> -->
+                        
                     </span>
                     <img src="assets/collection/m9696_1.jpg" alt="red" id="mainColorPic">
 
@@ -258,32 +257,35 @@
                     <button class="color_button whiteBtn" onclick="changeColor(this)" id="whiteBtnTwo"></button>
                     <button class="color_button redBtn" onclick="changeColor(this)" id="redBtnTwo"></button>
                     <button class="color_button blackBtn" onclick="changeColor(this)" id="blackBtnTwo"></button>
+                   
                 </div>
             </div>
             <div class="good_card">
                 <a href="page_one_good.html">
-                    <img src="assets/collection/162053_1.jpg" alt="white" class="hidden" id="white_chucks">
-                    <img src="assets/collection/3pic_black.jpg" alt="black" id="black_chucks">
+                    <span id="spanPicChuckHigh">
+                        
+                    </span>
+                    <img src="assets/collection/162053_1.jpg" alt="white" id="mainColorPicChuckHigh">
                     <p>Chuck 70 Classic High-Top</p>
                     <p>300 BYN</p>
                     <p class="small_text_colors">2 Цвета</p>
                 </a>
                 <div class="color_select_btn">
-                    <button class="color_button whiteBtn" onclick="changeColorChucks(this)" id="whiteBtnThree"></button>
-                    <button class="color_button blackBtn" onclick="changeColorChucks(this)" id="blackBtnThree"></button>
+                    <button class="color_button whiteBtn" onclick="changeColorChucksHigh(this)" id="whiteBtnThree"></button>
+                    <button class="color_button blackBtn" onclick="changeColorChucksHigh(this)" id="blackBtnThree"></button>
                 </div>
             </div>
             <div class="good_card">
                 <a href="page_one_good.html">
-                    <img src="assets/collection/162062_1.jpg" alt="white" id="white_chucks_low">
-                    <img src="assets/collection/4pic_black.jpg" alt="black" id="black_chucks_low" class="hidden">
+                    <span id="spanPicChuckLow"></span>
+                    <img src="assets/collection/162062_1.jpg" alt="white" id="mainColorPicChuckLow">
                     <p>Chuck 70 Classic Low-Top</p>
                     <p>290 BYN</p>
                     <p class="small_text_colors">2 Цвета</p>
                 </a>
                 <div class="color_select_btn">
-                    <button class="color_button whiteBtn" onclick="changeColorChucks(this)" id="whiteBtnFour"></button>
-                    <button class="color_button blackBtn" onclick="changeColorChucks(this)" id="blackBtnFour"></button>
+                    <button class="color_button whiteBtn" onclick="changeColorChucksLow(this)" id="whiteBtnFour"></button>
+                    <button class="color_button blackBtn" onclick="changeColorChucksLow(this)" id="blackBtnFour"></button>
                 </div>
             </div>
             <div class="good_card">
@@ -321,8 +323,10 @@
             </div>
             <div class="good_card">
                 <a href="page_one_good.html">
-                    <img src="assets/collection/171565_1.jpg" alt="green" id="greenCanvas">
-                    <img src="assets/collection/canvas_red.jpg" alt="red" id="redCanvas" class="hidden">
+                    <span id="spanPicChuckVintage">
+                        
+                    </span>
+                    <img src="assets/collection/171565_1.jpg" alt="green" id="mainColorPicVintage">
                     <p>Chuck 70 Canvas Color Vintage High Top</p>
                     <p>300 BYN</p>
                     <p class="small_text_colors">2 Цвета</p>
@@ -334,15 +338,13 @@
             </div>
             <div class="good_card">
                 <a href="page_one_good.html">
-                    <img src="assets/collection/171568_1.jpg" alt="green" id="greenCanvasLow" class="hidden">
                     <img src="assets/collection/canvaslow_red.jpg" alt="red" id="redCanvasLow">
                     <p>Chuck 70 Canvas Color Vintage Low Top</p>
                     <p>280 BYN</p>
-                    <p class="small_text_colors">2 Цвета</p>
+                    <p class="small_text_colors">1 Цвет</p>
                 </a>
                 <div class="color_select_btn">
-                    <button class="color_button vineBtn" onclick="changeColorCanvas(this)" id="redBtnCanvasLow"></button>
-                    <button class="color_button greenBtn" onclick="changeColorCanvas(this)" id="greenBtnCanvasLow"></button>
+                    <button class="color_button vineBtn" id="redBtnCanvasLow"></button>
                 </div>
             </div>
             <div class="good_card">
@@ -431,6 +433,7 @@
                 <h5> © 2021 </h5>
             </div>
         </div>
+        <script src="js/js_page_collection/products.js"></script>
         <script src="js/main-page/js-menu.js"></script>
         <script src="js/js_page_collection/js_filter.js"></script>
         <script src="js/js_page_collection/color_select.js"></script>
