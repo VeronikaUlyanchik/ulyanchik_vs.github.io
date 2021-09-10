@@ -56,7 +56,19 @@ div.product_list img {
     border: 1px solid  rgb(179, 170, 170);
 }
 div.good_card:hover > div.color_select_btn{
-    display: block;
+    display: flex;
+    justify-content: space-around;
+}
+.basketBtn {
+    border: none;
+    background-color: #b96464;
+    cursor: pointer;
+    width: 50px;
+    position: relative;
+    top: -18px;
+}
+.basketBtn:active {
+    transform: scale(0,7);
 }
 .select_price_field , .select_type_field , .select_size_field , .select_color_field , .select_male_field{
     position: absolute;
@@ -99,16 +111,16 @@ div.good_card:hover > div.color_select_btn{
     font-size: 14px;
 }
 .color_button {
-    width: 20px;
-    height: 20px;
-    border-radius: 10px;
+    width: 26px;
+    height: 26px;
+    border-radius: 13px;
     cursor: pointer;
 }
 .whiteBtn {
     background: white;
     border: 1px solid gray;
 }
-.vineBtn {
+.vineBtn , .redBtnCanvasLow {
     background:#5c151d;
     border: 1px solid #5c151d;
 }
@@ -120,7 +132,7 @@ div.good_card:hover > div.color_select_btn{
     background:#312805;
     border: 1px solid #312805;
 }
-.blackBtn {
+.blackBtn , .blackKnitBtn , .blackKnitLowBtn , .blackBtnUltra{
     background: black;
     border: 1px solid black;
 }
