@@ -1,44 +1,37 @@
-const spanPicTwo = document.getElementById('spanPicTwo');
-const mainColorPic = document.getElementById ('mainColorPic');
-const mainColorPicTaylorHigh = document.getElementById ('mainColorPicTaylorHigh');
-const spanPicTaylorHigh = document.getElementById('spanPicTaylorHigh');
-const mainColorPicChuckHigh = document.getElementById ('mainColorPicChuckHigh');
-const spanPicChuckHigh = document.getElementById('spanPicChuckHigh');
-const mainColorPicChuckLow = document.getElementById ('mainColorPicChuckLow');
-const spanPicChuckLow = document.getElementById('spanPicChuckLow');
-const mainColorPicVintage = document.getElementById ('mainColorPicVintage');
-const spanPicChuckVintage = document.getElementById('spanPicChuckVintage');
-
-
+let filtered;
 
 function changeColor (color) {
 
-    const imgInput = items.find(item => item.id === color.id).img
-        spanPicTwo.innerHTML = `<img src="${imgInput}" alt="white" >`
-        mainColorPic.style.display= 'none';
+    let product;
+    filtered = items.filter(function(item) {
+        if(item.id === color.id) {
+        return true
+    }
+    return false
+    })
+        let html = '';
+    for (let i = 0; i < filtered.length; i++) {
+        product = filtered[i];
+        html += `
+                <a href="page_one_good.html">
+            <img src="${product.img}" alt="red" id="${product.mainPic}">
+            <p>${product.title}</p>
+            <p>${product.price} BYN</p>
+            <p class="small_text_colors">${product.numberColors} Цвета</p>
+        </a>
+        <div class="color_select_btn"> <div id="BtnField${product.span}">
+        <button class="color_button ${product.id}"></button>
+        
+        </div> 
+        <div>
+            <button class="basketBtn" onclick="addToBasketArray(${i}, filtered)"> <img src="assets/shopping_cart_white_24dp.svg " class="icons_header"> </button>
+            <button class="basketBtn"> <img src="assets/favorite_border_white_24dp.svg" class="icons_header"> </button>
+        </div>
+        </div>
+        </div>
+        `
 }
+document.getElementById(`${product.span}`).innerHTML = html
 
-function changeColorFirst (color) {
-    const imgInput = items.find(item => item.id === color.id).img
-        spanPicTaylorHigh.innerHTML = `<img src="${imgInput}" alt="white" >`
-        mainColorPicTaylorHigh.style.display= 'none';
-}
-
-
-function changeColorChucksHigh (color) {
-    const imgInput = items.find(item => item.id === color.id).img
-        spanPicChuckHigh.innerHTML = `<img src="${imgInput}" alt="white" >`
-        mainColorPicChuckHigh.style.display= 'none';
-}
-
-function changeColorChucksLow (color) {
-    const imgInput = items.find(item => item.id === color.id).img
-        spanPicChuckLow.innerHTML = `<img src="${imgInput}" alt="white" >`
-        mainColorPicChuckLow.style.display= 'none';
-}
-
-function changeColorCanvas (color) {
-    const imgInput = items.find(item => item.id === color.id).img
-    spanPicChuckVintage.innerHTML = `<img src="${imgInput}" alt="white" >`
-        mainColorPicVintage.style.display= 'none';
+addBtn ()
 }

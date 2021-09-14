@@ -59,17 +59,6 @@ div.good_card:hover > div.color_select_btn{
     display: flex;
     justify-content: space-around;
 }
-.basketBtn {
-    border: none;
-    background-color: #b96464;
-    cursor: pointer;
-    width: 50px;
-    position: relative;
-    top: -18px;
-}
-.basketBtn:active {
-    transform: scale(0,7);
-}
 .select_price_field , .select_type_field , .select_size_field , .select_color_field , .select_male_field{
     position: absolute;
     top: 57px;

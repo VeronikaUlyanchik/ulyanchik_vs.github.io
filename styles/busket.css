@@ -1,8 +1,19 @@
-.container-backet {
+.container-basket {
     position: absolute;
     width: 350px;
-    height: 900px;
+    height: 100%;
     background-color: white;
+    right: 0px;
+    transform: translate(100%);
+    z-index: 99;
+    top: 0px;
+    transition: 500ms;
+    
+    display: flex;
+    flex-direction: column;
+}
+.container-basket-view{
+    transform: translate(0);
 }
 .busketInfo {
     display: flex;
@@ -22,8 +33,80 @@
     border-top: none;
     padding: 9px;
     width: 60px;
+    cursor: pointer;
 }
 div.closeBusketBtn img {
     width: 49px;
     height: 49px;
+}
+.basketItemTitle {
+    margin-left: 20px;
+    font-size: 13px;
+    width: 200px;
+}
+.containerForOneProd {
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1px solid gray;
+    padding-bottom: 10px;
+    flex-grow: 1;
+}
+.goodBusketField{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    overflow-y: scroll;
+    padding-left: 10px;
+}
+.basketImg {
+    width: 155px;
+    height: 100px;
+}
+.small_img{
+    margin-left: 10px;
+    width: 100%;
+    object-fit: cover;
+}
+.deleteFromBasket , .countBtn , .makeOrderBtn {
+    background-color: black;
+    color: white;
+    border: 2px solid black;
+    font-size: 12px;
+    padding: 5px 15px;
+    font-family: 'Raleway', sans-serif;
+    cursor: pointer;
+}
+.countBtn {
+    font-size: 16px;
+    padding: 0px;
+    width: 24px;
+}
+.countBtn:active, .deleteFromBasket:active ,.makeOrderBtn {
+    border: 2px solid white;
+}
+.makeOrderBtn {
+    position: relative;
+    bottom: 5px;
+    padding: 25px 30px;
+    font-size: 17px;
+    margin-top: 10px;
+    width: 100%;
+}
+.makeOrder {
+    height: 190px;
+}
+.basketBtn {
+    border: 5px solid #b96464;
+    background-color: #b96464;
+    cursor: pointer;
+    width: 50px;
+    position: relative;
+    top: -18px;
+}
+.basketBtn:hover{
+    background-color:#c03e3e ;
+    border: 5px solid #c03e3e;
+}
+.basketBtn:active{
+    border: 5px solid white;
 }

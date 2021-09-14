@@ -37,15 +37,18 @@ flex-direction: row;
     position: absolute;
     z-index: 99;
 }
-.background_none{
+.background_none, .backgroundForBasket{
     position: absolute;
     transform: translate(-100%);
-    transition: transform 500ms;
     width: 100%;
     height: 379%;
-    z-index: 55;
+    z-index: 89;
     background-color:#7b7b7c ;
     opacity: 0.5;
+}
+.backgroundForBasket {
+    top:0px;
+    transform: translate(0%);
 }
 .background {
     transform: translate(0%);

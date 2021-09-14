@@ -15,6 +15,7 @@
     <link rel="stylesheet" type="text/css" href="styles/pop-up.css">
     <link rel="stylesheet" type="text/css" href="styles/footer_media.css">
     <link rel="stylesheet" type="text/css" href="styles/header_media.css">
+     <link rel="stylesheet" type="text/css" href="styles/busket.css">
 </head>
 </head>
 <style>
@@ -23,6 +24,7 @@
         margin: 0;
         overflow-y: scroll;
         scroll-behavior: smooth;
+        overflow-x: hidden;
     }
 </style>
 <body>
@@ -42,8 +44,8 @@
                     <Label for="searchInput"><img src="assets/search_gray_24dp.svg" alt="" id="search_label_input"></Label>
                 </div>
                 <a><span class="material-icons_header" onclick="openLoginForm()"><img src="assets/account_circle_black_24dp.svg" alt="" class="icons_header"></span></a>
-                    <a href=""><span class="material-icons_header"><img src="assets/favorite_border_black_24dp.svg" alt="" class="icons_header"></span></a>
-                    <a href=""><span class="material-icons_header"><img src="assets/shopping_cart_black_24dp.svg" alt="" class="icons_header"></span></a>
+                    <a><span class="material-icons_header" onclick="viewBasket()"><img src="assets/favorite_border_black_24dp.svg" alt="" class="icons_header"></span></a>
+                    <a><span class="material-icons_header"><img onclick="viewBasket()" src="assets/shopping_cart_black_24dp.svg" alt="" class="icons_header"></span></a>
                     <a style="margin-top: -2px;"><span class="material-icons_header search"><img id="searchBtn"  src="assets/search_white_24dp.svg" alt="" class="icons_header">
                         <img id="closeSearchBtn" src="assets/close_white_24dp.svg" alt="" class="icons_header close_none"></span></a>
             </div>
@@ -131,7 +133,16 @@
                     на отдельные товары</h2>
             </div>
         </div>
-
+        <div class="container-basket" id="container-basket">
+            <div class="busketInfo">
+                <div class="goodsExistInfo">0 товаров в вашей корзине</div>
+                <div class="closeBusketBtn" onclick="closeBasket()"><img src="assets/close_gray_24dp.svg" alt=""></div>
+            </div>
+            <div class="goodBusketField" id="BusketField">
+                
+            </div>
+            <div class="makeOrder" id="makeOrderField"></div>
+        </div>
 
 
         <div class="main_collection_page" id="main_collection_page">
@@ -230,7 +241,7 @@
         <div class="footer">
             <div class="footer_upper">
                 <div class="email_part">
-                    <h2> 
+                    <h2>  
                         Будь в курсе событий
                     </h2>
                     <h4>
@@ -282,9 +293,11 @@
         <script src="js/main-page/js-menu.js"></script>
         <script src="js/js_page_collection/js_filter.js"></script>
         <script src="js/js_page_collection/renderView.js"></script>
-        
+        <script src="js/js_page_collection/basket.js"></script>
+        <script src="js/main-page/js-busket-view.js"></script>
         <script src="js/js_page_collection/color_select.js"></script>
         <script src="js/main-page/js-search.js"></script>
+        
         
 </body>
 </html>
