@@ -16,9 +16,11 @@
     <link rel="stylesheet" type="text/css" href="styles/product_list_intrends.css">
     <link rel="stylesheet" type="text/css" href="styles/pop-up.css">
     <link rel="stylesheet" type="text/css" href="styles/header_media.css">
+    <link rel="stylesheet" type="text/css" href="styles/basket.css">
     <link rel="stylesheet" type="text/css" href="styles/main_media.css">
     <link rel="stylesheet" type="text/css" href="styles/footer_media.css">
     <link rel="stylesheet" type="text/css" href="styles/registration_form.css">
+    
 </head>
 <style>
     body {
@@ -50,9 +52,10 @@
                 <Label for="searchInput"><img src="assets/search_gray_24dp.svg" alt="" id="search_label_input"></Label>
             </div>
             <a><span class="material-icons_header" onclick="openLoginForm()"><img src="assets/account_circle_black_24dp.svg" alt="" class="icons_header"></span></a>
-                <a href=""><span class="material-icons_header"><img src="assets/favorite_border_black_24dp.svg" alt="" class="icons_header"></span></a>
-                <a href=""><span class="material-icons_header"><img src="assets/shopping_cart_black_24dp.svg" alt="" class="icons_header"></span></a>
-                <a class="search"><img id="searchBtn"  src="assets/search_white_24dp.svg" alt="" class="icons_header">
+                <a><span class="material-icons_header" onclick="viewBasket()"><img src="assets/favorite_border_black_24dp.svg" alt="" class="icons_header"></span></a>
+                <a><span class="material-icons_header" onclick="viewBasket()"><img src="assets/shopping_cart_black_24dp.svg" alt="" class="icons_header">
+                <div class="counterInBasket" id="counterInBasket"></div></span></a>
+                <a style="margin-top: -2px;"><span class="material-icons_header search"><img id="searchBtn"  src="assets/search_white_24dp.svg" alt="" class="icons_header">
                     <img id="closeSearchBtn" src="assets/close_white_24dp.svg" alt="" class="icons_header close_none"></span></a>
         </div>
     </div>
@@ -135,6 +138,17 @@
                     <br>
                     на отдельные товары</h2>
             </div>
+        </div>
+
+        <div class="container-basket" id="container-basket">
+            <div class="busketInfo">
+                <div class="goodsExistInfo" id="goodsExistInfo"></div>
+                <div class="closeBusketBtn" onclick="closeBasket()"><img src="assets/close_gray_24dp.svg" alt=""></div>
+            </div>
+            <div class="goodBusketField" id="BusketField">
+                
+            </div>
+            <div class="makeOrder" id="makeOrderField"></div>
         </div>
 
         <div class="login" id="login_form" >
@@ -248,15 +262,15 @@
     </div>
 
         <div class="types_snikers_part">
-            <a href="">
+            <a href="page_collection.html">
                 <img src="assets/converse-visokye-may.jpg">
                 <h5 class="types_snikers_text"> Высокие кеды</h5>
             </a>
-            <a href="">
+            <a href="page_collection.html">
                 <img src="assets/converse-nizkie-may.jpg">
                 <h5 class="types_snikers_text"> Низкие кеды</h5>
             </a>
-            <a href="">
+            <a href="page_collection.html">
                 <img src="assets/converse-platform-may.jpg">
                 <h5 class="types_snikers_text"> Кеды на платформе</h5>
             </a>
@@ -398,30 +412,30 @@
             </h1>
             
             <div class="clothers_links">
-                <a href="">
+                <a href="page_collection.html">
                     <img src="assets/jackets.jpg" alt="">
                     <h5 class="types_snikers_text" id="margin"> Куртки</h5>
                 </a>
-                <a href="">
+                <a href="page_collection.html">
                     <img src="assets/hoodies.jpg" alt="">
                     <h5 class="types_snikers_text" id="margin"> Толстовки </h5>
                 </a>
-                <a href="">
+                <a href="page_collection.html">
                     <img src="assets/pants.jpg" alt="">
                     <h5 class="types_snikers_text" id="margin"> Штаны</h5>
                 </a>
-                <a href="">
+                <a href="page_collection.html">
                     <img src="assets/tshirts.jpg" alt="">
                     <h5 class="types_snikers_text" id="margin"> Футболки</h5>
                 </a>  
             </div>
-            <a href=""><span class="material-icons_main">arrow_right_alt</span>Смотреть все</a>
+            <a href="page_collection.html"><span class="material-icons_main">arrow_right_alt</span>Смотреть все</a>
         </div>
         <div class="accessories_part">
             <h1>
                 Аксессуары
             </h1>
-            <a href=""><span class="material-icons_main">arrow_right_alt</span>Смотреть все</a>
+            <a href="page_collection.html"><span class="material-icons_main">arrow_right_alt</span>Смотреть все</a>
         </div>
         <div class="open_forYS_part">
             <h1 class="h1_open_forYS_part">
@@ -430,33 +444,33 @@
             <div class="table_links">
                 <div class="table_links_big_box">
                     <div>
-                        <a href=""><span class="material-icons_main">arrow_right_alt</span>Мужское</a>
+                        <a href="page_collection.html"><span class="material-icons_main">arrow_right_alt</span>Мужское</a>
                     </div>
                     <div>
-                        <a href=""> <span class="material-icons_main">arrow_right_alt</span>Женское</a>
+                        <a href="page_collection.html"> <span class="material-icons_main">arrow_right_alt</span>Женское</a>
                     </div>
                     <div>
-                        <a href=""> <span class="material-icons_main">arrow_right_alt</span>Детское</a>
+                        <a href="page_collection.html"> <span class="material-icons_main">arrow_right_alt</span>Детское</a>
                     </div>    
                     </div>
                 <div class="table_links_small_box">
                     <div>
-                        <a href=""><span class="material-icons_main">arrow_right_alt</span>Новинки</a>
+                        <a href="page_collection.html"><span class="material-icons_main">arrow_right_alt</span>Новинки</a>
                     </div>
                     <div>
-                        <a href=""><span class="material-icons_main">arrow_right_alt</span>Обувь</a>
+                        <a href="page_collection.html"><span class="material-icons_main">arrow_right_alt</span>Обувь</a>
                     </div>
                     <div>
-                        <a href=""><span class="material-icons_main">arrow_right_alt</span>Бестселлеры</a>
+                        <a href="page_collection.html"><span class="material-icons_main">arrow_right_alt</span>Бестселлеры</a>
                     </div>
                     <div>
-                        <a href=""><span class="material-icons_main">arrow_right_alt</span>Одежда</a>
+                        <a href="page_collection.html"><span class="material-icons_main">arrow_right_alt</span>Одежда</a>
                     </div>
                     <div>
-                        <a href=""><span class="material-icons_main">arrow_right_alt</span>Распродажа</a>
+                        <a href="page_collection.html"><span class="material-icons_main">arrow_right_alt</span>Распродажа</a>
                     </div>
                     <div>
-                        <a href=""><span class="material-icons_main">arrow_right_alt</span>Аксессуары</a>
+                        <a href="page_collection.html"><span class="material-icons_main">arrow_right_alt</span>Аксессуары</a>
                     </div>
                 </div>
 
@@ -481,21 +495,21 @@
             </div>
             <div class="terms_part">
                 <h4> Условия продаж</h4>
-                <a href="">Публичная оферта</a>
-                <a href="">Возврат товара</a>
-                <a href="">Условия доставки</a>
+                <a href="infopage.html">Публичная оферта</a>
+                <a href="infopage.html">Возврат товара</a>
+                <a href="infopage.html">Условия доставки</a>
             </div>
             <div class="terms_part">
                 <h4>Для покупателей</h4>
-                <a href="">Подбор размера</a>
-                <a href="">Помощь и FAQ</a>
-                <a href="">Личный кабинет</a>
+                <a href="infopage.html">Подбор размера</a>
+                <a href="infopage.html">Помощь и FAQ</a>
+                <a href="infopage.html">Личный кабинет</a>
             </div>
             <div class="terms_part">
                 <h4>О нас</h4>
-                <a href="">Наши контакты</a>
-                <a href="">Карта магазинов</a>
-                <a href="">История Converse</a>
+                <a href="infopage.html">Наши контакты</a>
+                <a href="infopage.html">Карта магазинов</a>
+                <a href="infopage.html">История Converse</a>
             </div>
         </div>
         <div class="footer_bottom">
@@ -519,6 +533,9 @@
     <script src="js/main-page/js-registration.js"></script>
     <script src="js/main-page/producy_carousel.js"></script>
     <script src="js/main-page/js-search.js"></script>
+    <script src="js/main-page/js-basket-view.js"></script>
+    <script src="js/js_page_collection/basket.js"></script>
+    <script src="js/js_page_collection/products.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
 </body>
 </html>

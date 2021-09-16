@@ -1,0 +1,19 @@
+.mainText{
+    margin: 20px 120px;
+}
+div.mainText h1{
+    text-align: center;
+}
+
+.storyConverse{
+    font-size: 17px;
+    text-indent: 50px;
+}
+#map {
+    display: flex;
+    flex-direction: row;
+    margin: 50px;
+}
+.shops{
+    margin-left:20px;
+}

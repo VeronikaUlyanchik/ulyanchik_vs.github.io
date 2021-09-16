@@ -1,63 +1,67 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Мужская коллекция</title>
+    <title>История Converse</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Icons">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Icons">
     <link rel="stylesheet" type="text/css" href="styles/header.css">
+    <link rel="stylesheet" type="text/css" href="styles/main.css">
     <link rel="stylesheet" type="text/css" href="styles/footer.css">
-    <link rel="stylesheet" type="text/css" href="styles/main-collection-page.css">
     <link rel="stylesheet" type="text/css" href="styles/pop-up.css">
-    <link rel="stylesheet" type="text/css" href="styles/footer_media.css">
     <link rel="stylesheet" type="text/css" href="styles/header_media.css">
-     <link rel="stylesheet" type="text/css" href="styles/basket.css">
-     <link rel="stylesheet" type="text/css" href="styles/registration_form.css">
-</head>
+    <link rel="stylesheet" type="text/css" href="styles/basket.css">
+    <link rel="stylesheet" type="text/css" href="styles/main_media.css">
+    <link rel="stylesheet" type="text/css" href="styles/footer_media.css">
+    <link rel="stylesheet" type="text/css" href="styles/registration_form.css">
+    <link rel="stylesheet" type="text/css" href="styles/pageinfo.css">
+    
 </head>
 <style>
-     body {
+    body {
         font-family: 'Raleway', sans-serif;
         margin: 0;
-        overflow-y: scroll;
         scroll-behavior: smooth;
+        width: 100%;
         overflow-x: hidden;
     }
 </style>
 <body>
-    <div class="container">
-        <div class="header_line"></div>
-        <div class="header">
-            <div class="header_left">
-               <a href="index.html"><img src="assets/Logo-dark.svg" alt="logo" class="logo"></a>
-               <div class="links"> <p id="women_btn" onclick="openCloseMenuWomen()">Женское</p></div>
-               <div class="links"><p id="men_btn" onclick="openCloseMenuMen()">Мужское</p></div>
-               <div class="links"><p id="kids_btn" onclick="openCloseMenuKids()">Детское</p></div>
-               <div class="links"><p id="kids_btn" onclick="openCloseMenuSale()">Распродажа</p></div>
-            </div>
-            <div class="header_right">
-                <div class="search_field" id="searchBox" >
-                    <input class="search_input" type="text" placeholder="Что вы хотите найти?" id="searchInput"> 
-                    <Label for="searchInput"><img src="assets/search_gray_24dp.svg" alt="" id="search_label_input"></Label>
-                </div>
-                <a><span class="material-icons_header" onclick="openLoginForm()"><img src="assets/account_circle_black_24dp.svg" alt="" class="icons_header"></span></a>
-                    <a><span class="material-icons_header" onclick="viewBasket()"><img src="assets/favorite_border_black_24dp.svg" alt="" class="icons_header"></span></a>
-                    <a><span class="material-icons_header" onclick="viewBasket()"><img src="assets/shopping_cart_black_24dp.svg" alt="" class="icons_header">
-                    <div class="counterInBasket" id="counterInBasket"></div></span></a>
-                    <a style="margin-top: -2px;"><span class="material-icons_header search"><img id="searchBtn"  src="assets/search_white_24dp.svg" alt="" class="icons_header">
-                        <img id="closeSearchBtn" src="assets/close_white_24dp.svg" alt="" class="icons_header close_none"></span></a>
-            </div>
+    <div class="header_line"></div>
+    <div class="header">
+        <div class="header_left">
+           <a href="index.html"><img src="assets/Logo-dark.svg" alt="logo" class="logo"></a> 
+            <div class="links"> <p id="women_btn" onclick="openCloseMenuWomen()">Женское</p></div>
+            <div class="links"><p id="men_btn" onclick="openCloseMenuMen()">Мужское</p></div>
+            <div class="links"><p id="kids_btn" onclick="openCloseMenuKids()">Детское</p></div>
+            <div class="links"><p id="sales_btn" onclick="openCloseMenuSale()">Распродажа</p></div>
         </div>
-        <div class="header_menu">
-            <div class="links links_header_menu"><a href="file:///C:/Users/user/project/ulyanchik_vs.github.io-1/index.html">Главная</a></div>
-            <div class="links links_header_menu"><a href="">Мужское</a></div>
+        <div class="header_right">
+            <div class="search_field" id="searchBox" >
+                <input class="search_input" type="text" placeholder="Что вы хотите найти?" id="searchInput"> 
+                <Label for="searchInput"><img src="assets/search_gray_24dp.svg" alt="" id="search_label_input"></Label>
+            </div>
+            <a><span class="material-icons_header" onclick="openLoginForm()"><img src="assets/account_circle_black_24dp.svg" alt="" class="icons_header"></span></a>
+                <a><span class="material-icons_header" onclick="viewBasket()"><img src="assets/favorite_border_black_24dp.svg" alt="" class="icons_header"></span></a>
+                <a><span class="material-icons_header" onclick="viewBasket()"><img src="assets/shopping_cart_black_24dp.svg" alt="" class="icons_header">
+                <div class="counterInBasket" id="counterInBasket"></div></span></a>
+                <a style="margin-top: -2px;"><span class="material-icons_header search"><img id="searchBtn"  src="assets/search_white_24dp.svg" alt="" class="icons_header">
+                    <img id="closeSearchBtn" src="assets/close_white_24dp.svg" alt="" class="icons_header close_none"></span></a>
         </div>
-        <div class="background_none" id="background" onclick="closeMenuAndForm()">
-            <button> <span class="material-icons" id="close_btn" onclick="closeMenuAndForm()">close</span> </button>
+    </div>
+
+    <div class="header_menu">
+        <div class="links links_header_menu"><a href="file:///C:/Users/user/project/ulyanchik_vs.github.io-1/index.html">Главная</a></div>
+        <div class="links links_header_menu"><a href="">История Converse</a></div>
+    </div>
+
+    <div class="main">
+        <div class="background_none" id="background" onclick="closeMenuAndForm() ">
+            <button> <span class="material-icons" id="close_btn" onclick="closeMenuAndForm() ">close</span> </button>
         </div>
 
         <div class="menu-women" id="menu-women">
@@ -135,7 +139,18 @@
                     на отдельные товары</h2>
             </div>
         </div>
-        
+
+        <div class="container-basket" id="container-basket">
+            <div class="busketInfo">
+                <div class="goodsExistInfo" id="goodsExistInfo"></div>
+                <div class="closeBusketBtn" onclick="closeBasket()"><img src="assets/close_gray_24dp.svg" alt=""></div>
+            </div>
+            <div class="goodBusketField" id="BusketField">
+                
+            </div>
+            <div class="makeOrder" id="makeOrderField"></div>
+        </div>
+
         <div class="login" id="login_form" >
             <div class="btns_log_reg">
             <div class="login_button">Вход</div>
@@ -178,59 +193,46 @@
         </form>
         <div> или <button id="login_acc" onclick="openLoginFormFromRegForm()">ВОЙТИ ПОД СВОЕЙ УЧЕТНОЙ ЗАПИСЬЮ</button></div>
         </div>
-        <div class="container-basket" id="container-basket">
-            <div class="busketInfo">
-                <div class="goodsExistInfo" id="goodsExistInfo"></div>
-                <div class="closeBusketBtn" onclick="closeBasket()"><img src="assets/close_gray_24dp.svg" alt=""></div>
-            </div>
-            <div class="goodBusketField" id="BusketField">
-                
-            </div>
-            <div class="makeOrder" id="makeOrderField"></div>
+    </div>
+    <div class="mainText">
+        <h1>История Converse</h1>
+        <p class="storyConverse">
+        Компания Converse возникла в 1908 году как производитель резиновой обуви, специализировавшаяся сначала на выпуске галош. Однако вскоре мы стали делать из той же резины спортивные кеды. В 1920 году мы придумали название для наших баскетбольных кед с канвасным верхом, All Star. Название оказалось удачным и прижилось. Неудачной оказалась попытка ограничить сферу их применения спортом. Люди увидели в них нечто большее, чем просто спортивная обувь, и стали носить их везде, где только возможно. Именно вы, наши клиенты, стали носить эти кеды на концерты и выставки, стали кататься в них на скейтбордах и оттягиваться в них на вечеринках. Вы стали использовать их как модный атрибут. И даже ходить в них на работу. Вы сделали их частью вашего стиля. Вы делали в них и с ними все, что хотели. И вы разглядели безграничный потенциал наших кед.
+        </p>
+        <div id="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1175.1511801439083!2d27.550056943347148!3d53.90860279382564!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sby!4v1631832171480!5m2!1sru!2sby" width="700" height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            <div class="shops">
+                <h1>Карта магазинов</h1>
+                <p>Converse <br>
+                    Минcк <br>
+                    Проспект Победителей д.22, 2 этаж 
+                </p>
+                <p>Sneakerhead <br>
+                    Минcк <br>
+                    ТЦ Атриум, Землянной вал, 33 <br>
+                </p>
+                <p>STREET BEAT <br>
+                    Минcк <br>
+                    ТРЦ Европолис, Проспект Мира, 211, 1 торговый уровень  <br>
+                </p>
         </div>
+    </div>
+    <div>
+        <h1>Контакты Converse</h1> 
+               <p><b>Служба поддержки клиентов Converse.com:</b></p>
+                <p>Для всех вопросов, связанных с работой интернет-магазина Converse.com
+                </p>
 
+                <p>Тел.: 375 33 670 76 83  <br>
+                (Бесплатный номер для звонков)</p>
 
-        <div class="main_collection_page" id="main_collection_page">
-            <h2 class="h2_main">Кеды</h2>
-            <div class="filter_panel" id="filter_panel">
-                <div class="found_good">Найдено 36 товаров</div>
-                <div class="fiter" id="fiter">
-                    <div class="price_choice" id="price_choice" onclick="openFilter(select_price_field)">Цена <span class="drop_down">
-                        <img id="rotate_select_price_field" src="assets/arrow_drop_down_black_24dp.svg" alt=""></span> </div>
-                        
-                        <form class="select_price_field open" id="select_price_field" >
-                        
-                        </form>
-
-
-                    <div class="type_choice" id="type_choice" onclick="openFilter(select_type_field)">Тип товара <span class="drop_down">
-                        <img id="rotate_select_type_field" src="assets/arrow_drop_down_black_24dp.svg" alt=""></div>
-                        <div class="select_type_field open" id="select_type_field">
-                         </div>
-
-                    <div class="color_choice" id="color_choice" onclick="openFilter(select_color_field)">Цвет <span class="drop_down">
-                        <img  id="rotate_select_color_field" src="assets/arrow_drop_down_black_24dp.svg" alt=""></span> </div>
-
-                        <div class="select_color_field open" id="select_color_field">
-                         </div>
-
-                    <div class="male_choice" id="male_choice" onclick="openFilter(select_male_field)">Пол <span class="drop_down">
-                        <img id="rotate_select_male_field" src="assets/arrow_drop_down_black_24dp.svg" alt=""></span> </div>
-
-                        <div class="select_male_field open" id="select_male_field">
-                            
-                         </div>
-                </div>
-                <div class="sort">Сортировка : По умолчанию</div>
-            </div>
-        </div>
-        <div class="product_list" id="product_list">
-
-        </div>
+               <p>Email: amersportgroup@lmexpress.ru  </p>
+    </div>
+    </div>
         <div class="footer">
             <div class="footer_upper">
                 <div class="email_part">
-                    <h2>  
+                    <h2> 
                         Будь в курсе событий
                     </h2>
                     <h4>
@@ -278,18 +280,15 @@
                 <h5> © 2021 </h5>
             </div>
         </div>
-        <script src="js/js_page_collection/products.js"></script>
+    
         <script src="js/main-page/js-menu.js"></script>
-        <script src="js/js_page_collection/renderView.js"></script>
-        <script src="js/js_page_collection/basket.js"></script>
-        <script src="js/main-page/js-basket-view.js"></script>
-        <script src="js/js_page_collection/color_select.js"></script>
-        <script src="js/main-page/js-search.js"></script>
-        <script src="js/js_page_collection/collection_filters.js"></script>
-        <script src="js/js_page_collection/filters.js"></script>
-        <script src="js/js_page_collection/filterView.js"></script>
         <script src="js/main-page/js-registration.js"></script>
-        
-        
-</body>
-</html>
+        <script src="js/main-page/js-search.js"></script>
+        <script src="js/main-page/js-basket-view.js"></script>
+        <script src="js/js_page_collection/basket.js"></script>
+        <script src="js/js_page_collection/products.js"></script>
+        <!-- <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEYcallback=myMap"></script> -->
+        <script src="js/infopage/map.js"></script>
+    
+    </body>
+    </html>

@@ -15,6 +15,8 @@
     <link rel="stylesheet" type="text/css" href="styles/pop-up.css">
     <link rel="stylesheet" type="text/css" href="styles/footer_media.css">
     <link rel="stylesheet" type="text/css" href="styles/header_media.css">
+    <link rel="stylesheet" type="text/css" href="styles/basket.css">
+    <link rel="stylesheet" type="text/css" href="styles/registration_form.css">
 </head>
 <style>
     body {
@@ -28,26 +30,29 @@
 <body>
    <div class="container">
     <div class="header_line"></div>
-    <div class="header">
-        <div class="header_left">
-            <a href="index.html"><img src="assets/Logo-dark.svg" alt="logo" class="logo"></a>
-            <div class="links"> <p id="women_btn" onclick="openCloseMenuWomen()">Женское</p></div>
-            <div class="links"><p id="men_btn" onclick="openCloseMenuMen()">Мужское</p></div>
-            <div class="links"><p id="kids_btn" onclick="openCloseMenuKids()">Детское</p></div>
-            <div class="links"><p id="kids_btn" onclick="openCloseMenuSale()">Распродажа</p></div>
-        </div>
-        <div class="header_right">
-            <div class="search_field" id="searchBox" >
-                <input class="search_input" type="text" placeholder="Что вы хотите найти?" id="searchInput"> 
-                <Label for="searchInput"><img src="assets/search_gray_24dp.svg" alt="" id="search_label_input"></Label>
+   
+        <div class="header">
+            <div class="header_left">
+               <a href="index.html"><img src="assets/Logo-dark.svg" alt="logo" class="logo"></a>
+               <div class="links"> <p id="women_btn" onclick="openCloseMenuWomen()">Женское</p></div>
+               <div class="links"><p id="men_btn" onclick="openCloseMenuMen()">Мужское</p></div>
+               <div class="links"><p id="kids_btn" onclick="openCloseMenuKids()">Детское</p></div>
+               <div class="links"><p id="kids_btn" onclick="openCloseMenuSale()">Распродажа</p></div>
             </div>
-            <a><span class="material-icons_header" onclick="openLoginForm()"><img src="assets/account_circle_black_24dp.svg" alt="" class="icons_header"></span></a>
-                <a href=""><span class="material-icons_header"><img src="assets/favorite_border_black_24dp.svg" alt="" class="icons_header"></span></a>
-                <a href=""><span class="material-icons_header"><img src="assets/shopping_cart_black_24dp.svg" alt="" class="icons_header"></span></a>
-                <a style="margin-top: -2px;"><span class="material-icons_header search"><img id="searchBtn"  src="assets/search_white_24dp.svg" alt="" class="icons_header">
-                    <img id="closeSearchBtn" src="assets/close_white_24dp.svg" alt="" class="icons_header close_none"></span></a>
+            <div class="header_right">
+                <div class="search_field" id="searchBox" >
+                    <input class="search_input" type="text" placeholder="Что вы хотите найти?" id="searchInput"> 
+                    <Label for="searchInput"><img src="assets/search_gray_24dp.svg" alt="" id="search_label_input"></Label>
+                </div>
+                <a><span class="material-icons_header" onclick="openLoginForm()"><img src="assets/account_circle_black_24dp.svg" alt="" class="icons_header"></span></a>
+                    <a><span class="material-icons_header" onclick="viewBasket()"><img src="assets/favorite_border_black_24dp.svg" alt="" class="icons_header"></span></a>
+                    <a><span class="material-icons_header" onclick="viewBasket()"><img src="assets/shopping_cart_black_24dp.svg" alt="" class="icons_header">
+                    <div class="counterInBasket" id="counterInBasket"></div></span></a>
+                    <a style="margin-top: -2px;"><span class="material-icons_header search"><img id="searchBtn"  src="assets/search_white_24dp.svg" alt="" class="icons_header">
+                        <img id="closeSearchBtn" src="assets/close_white_24dp.svg" alt="" class="icons_header close_none"></span></a>
+            </div>
         </div>
-    </div>
+
     <div class="header_menu">
         <div class="links links_header_menu"><a href="file:///C:/Users/user/project/ulyanchik_vs.github.io-1/index.html">Главная</a></div>
             <div class="links links_header_menu"><a href="page_collection.html">Мужское</a></div>
@@ -133,6 +138,58 @@
         </div>
     </div>
     
+    <div class="login" id="login_form" >
+        <div class="btns_log_reg">
+        <div class="login_button">Вход</div>
+        <div id="registration_button" onclick="openRegisterForm()">Регистрация</div>
+        </div>
+    <form class="login_form">
+        <label for="email">Электронная почта</label> <br>
+        <input type="email" id="email" class="input_email" required> <br>
+        <label for="password">Пароль</label> <br>
+        <input type="password" id="password" class="input_password" required> <br>
+        <label for="remember" class="label_remember"> Запомнить меня</label>
+        <input id="remember" type="checkbox" name="remember" value="yes" checked=""> <br>
+        <button id="login">
+            Вход
+        </button>
+    </form>
+    <div> или <button id="create_acc" onclick="openRegisterForm()" >СОЗДАТЬ УЧЕТНУЮ ЗАПИСЬ</button></div>
+    </div>
+
+
+
+    <div class="registration" id="registration_form" >
+        <div class="btns_log_reg">
+        <div id="login_button" onclick="openLoginFormFromRegForm()">Вход</div>
+        <div class="registration_button">Регистрация</div>
+        </div>
+    <form class="login_form">
+        <label for="email">Электронная почта</label> <br>
+        <input type="email" id="email" class="input_email" required> <br>
+        <label for="name"> Имя </label> <label for="surname" class="label_surname"> Фамилия</label> <br>
+        <input type="text" id="name"> <input type="text" id="surname"> <br>
+
+        <label for="password">Пароль</label> <br>
+        <input type="password" id="password" class="input_password" required> <br>
+        <label for="remember" class="label_remember"> Я принимаю условия соглашения</label>
+        <input id="remember" type="checkbox" name="remember" value="yes" checked=""> <br>
+        <button id="registrate">
+            Зарегистрироваться
+        </button>
+    </form>
+    <div> или <button id="login_acc" onclick="openLoginFormFromRegForm()">ВОЙТИ ПОД СВОЕЙ УЧЕТНОЙ ЗАПИСЬЮ</button></div>
+    </div>
+    <div class="container-basket" id="container-basket">
+        <div class="busketInfo">
+            <div class="goodsExistInfo" id="goodsExistInfo"></div>
+            <div class="closeBusketBtn" onclick="closeBasket()"><img src="assets/close_gray_24dp.svg" alt=""></div>
+        </div>
+        <div class="goodBusketField" id="BusketField">
+            
+        </div>
+        <div class="makeOrder" id="makeOrderField"></div>
+    </div>
     <div class="main_good">
         <div class="photo_outline">
             <div class="photos">
@@ -248,7 +305,7 @@
                 </div>
                 <h2>290 BYN</h2>
                 <div class="choose_and_add_in_favor">
-                    <button class="choose_snickers"> Добавить в корзину</button>
+                    <button class="choose_snickers" onclick="addToBasketArray(20, items)"> Добавить в корзину</button>
                     <button class="add_in_favor" onclick="addFavor()"> <span id="not_favor" class="material-icons">
                         favorite_border
                         </span>
@@ -279,21 +336,21 @@
         </div>
         <div class="terms_part">
             <h4> Условия продаж</h4>
-            <a href="">Публичная оферта</a>
-            <a href="">Возврат товара</a>
-            <a href="">Условия доставки</a>
+            <a href="infopage.html">Публичная оферта</a>
+            <a href="infopage.html">Возврат товара</a>
+            <a href="infopage.html">Условия доставки</a>
         </div>
         <div class="terms_part">
             <h4>Для покупателей</h4>
-            <a href="">Подбор размера</a>
-            <a href="">Помощь и FAQ</a>
-            <a href="">Личный кабинет</a>
+            <a href="infopage.html">Подбор размера</a>
+            <a href="infopage.html">Помощь и FAQ</a>
+            <a href="infopage.html">Личный кабинет</a>
         </div>
         <div class="terms_part">
             <h4>О нас</h4>
-            <a href="">Наши контакты</a>
-            <a href="">Карта магазинов</a>
-            <a href="">История Converse</a>
+            <a href="infopage.html">Наши контакты</a>
+            <a href="infopage.html">Карта магазинов</a>
+            <a href="infopage.html">История Converse</a>
         </div>
     </div>
     <div class="footer_bottom">
@@ -316,5 +373,9 @@
     <script src="js/js_page_one_good/add_favor.js"></script>
     <script src="js/main-page/js-menu.js"></script>
     <script src="js/main-page/js-search.js"></script>
+    <script src="js/js_page_collection/products.js"></script>
+    <script src="js/js_page_collection/basket.js"></script>
+    <script src="js/main-page/js-basket-view.js"></script>
+    <script src="js/main-page/js-registration.js"></script>
 </body>
 </html>
