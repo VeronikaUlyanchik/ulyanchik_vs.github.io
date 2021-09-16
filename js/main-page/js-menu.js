@@ -83,6 +83,4 @@ function closeMenuAndForm() {
     background.classList.remove('backgroundForBasket')
     basketView.classList.remove('container-basket-view')
     backgroundRegistr.classList.remove('background')
-
-  
 }

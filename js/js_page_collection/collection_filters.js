@@ -1,6 +1,6 @@
-const priceArray = ["До 200 BYN", "До 250 BYN", "До 300 BYN", "До 350 BYN" , "От 350 BYN"]
-const typeArray = [{type: "Низкие",id: "low"},{type: "Высокие",id: "high"}, {type: "На платформе",id: "platform"}]
-const colorArray = [{type: "Черный",id: "black"},{type: "Белый",id: "white"}, {type: "Бежевый",id: "beige"},
-{type: "Красный",id: "red"},{type: "Мульти",id: "multi"},{type: "Синий",id: "blue"}, {type: "Серый",id: "gray"},
-{type: "Бирюзовый",id: "lightblue"} ]
-const maleArray = [{type: "Мужской",id: "man"},{type: "Унисекс",id: "unisex"}]
+const priceArray = ["До 200 BYN", "До 250 BYN", "До 300 BYN", "До 350 BYN" , "До 400 BYN"]
+const typeArray = [{type: "Низкие",id: "low", name: "type"},{type: "Высокие",id: "high", name: "type"}, {type: "На платформе",id: "platform", name: "type"}]
+const colorArray = [{type: "Черный",id: "black", name: "color"},{type: "Белый",id: "white",name: "color"}, {type: "Бежевый",id: "beige",name: "color"},
+{type: "Красный",id: "red", name: "color"},{type: "Мульти",id: "multi",name: "color"},{type: "Синий",id: "blue",name: "color"}, {type: "Серый",id: "gray",name: "color"},
+{type: "Бирюзовый",id: "lightblue",name: "color"} ]
+const maleArray = [{type: "Мужской",id: "man",name: "male"},{type: "Унисекс",id: "unisex",name: "male"}]

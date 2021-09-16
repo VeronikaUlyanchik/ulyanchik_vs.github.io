@@ -18,9 +18,9 @@ function renderPriceFilter() {
         filterItem = priceArray[i];
         let value = filterItem.match(r)
         html += `
-                                <div class="price_select_item"> 
-                                <input type="radio" name="select-price" value="${value}" id="price${value}" />
-                                <label for="price${value}">${filterItem}</label> </div>
+                               
+                                <input type="radio" name="select-price" onclick ="select(${value})" value="${value}" id="price${value}"/>
+                                <label for="price${value}" onclick ="select(${value})">${filterItem}</label> 
                `
 }
     priceField.innerHTML = html
@@ -34,7 +34,7 @@ function renderFilter(Arr,field) {
         filterItem = Arr[i];
         html += `
                     <div class="type_select_item"> 
-                    <input type="checkbox" value="${filterItem.id}" id="${filterItem.id}" />
+                    <input type="radio" name="select" value="${filterItem.id}" id="${filterItem.id}" onclick="onChangeFilter('${filterItem.type}')" />
                     <label for="${filterItem.id}">${filterItem.type}</label> </div>
                `
 }

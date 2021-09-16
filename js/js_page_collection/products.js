@@ -18,7 +18,7 @@ let items = [{
         span: 'spanPicTwo',
         numberColors: 3,
         male: "Унисекс",
-        type: "Низкие",
+        type: "low",
         id: "blackBtnTwo",
         price: 230},
 {

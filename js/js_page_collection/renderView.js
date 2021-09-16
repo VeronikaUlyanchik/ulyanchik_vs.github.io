@@ -2,8 +2,9 @@ const containerForGoods = document.getElementById('product_list')
 let mainView;
 
 
+
 function renderView() {
-    let  renderView = items.filter(function(item) {
+   let renderView = items.filter(function(item) {
         if(item.onPage ==='main') {
         return true
     }
