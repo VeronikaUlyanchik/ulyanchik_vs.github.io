@@ -110,3 +110,16 @@ div.closeBusketBtn img {
 .basketBtn:active{
     border: 5px solid white;
 }
+.counterInBasket {
+    display: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    background-color: red;
+    text-align: center;
+    position: relative;
+    font-size: 15px;
+    color:white;
+    font-weight: 900;
+    z-index: 2; 
+}

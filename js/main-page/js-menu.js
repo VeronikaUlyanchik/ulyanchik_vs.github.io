@@ -78,11 +78,11 @@ function closeMenuAndForm() {
     document.body.classList.remove('overflow_hidden')
     menuKids.classList.remove('menu-flex-kids')
     menuSale.classList.remove('menu-flex-sale')
+    loginForm.classList.remove('login_translate')
+    registrationForm.classList.remove('registration_translate')
     background.classList.remove('backgroundForBasket')
     basketView.classList.remove('container-basket-view')
-    loginForm.classList.remove('login_translate')
-    loginForm.classList.remove('login_translate')
     backgroundRegistr.classList.remove('background')
-    registrationForm.classList.remove('registration_translate')
+
   
 }

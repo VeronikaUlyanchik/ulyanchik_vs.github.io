@@ -2,6 +2,9 @@ const BusketField = document.getElementById('BusketField');
 const keyBusket = 'Busket';
 const basketArray = JSON.parse(localStorage.getItem(keyBusket)) || [];
 const makeOrderField = document.getElementById('makeOrderField')
+const counterInBasket = document.getElementById('counterInBasket');
+const goodsExistInfo = document.getElementById('goodsExistInfo');
+
 
 generateBasket()
 
@@ -28,11 +31,16 @@ function generateBasket(){
     })
     if (basketHtml === '') {
         basketHtml = 'Ваша корзина пока пустая'
+        goodsExistInfo.innerHTML= 'товаров в вашей корзине: 0';
+        counterInBasket.style.display ='none'
     } else {
+        counterInBasket.style.display ='block'
+        goodsExistInfo.innerHTML= `товаров в вашей корзине: ${basketArray.length}`;
         totalPrice += `<div>Итого: ${total} BYN </div>
         <button class="makeOrderBtn">Оформить заказ</button>`
     }
-    // basketHtml+=`<div>${basketArray.length}</div>`
+
+    counterInBasket.innerHTML=`<div>${basketArray.length}</div>`
     BusketField.innerHTML = basketHtml;
     makeOrderField.innerHTML = totalPrice;
 }

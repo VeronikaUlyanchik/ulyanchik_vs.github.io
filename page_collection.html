@@ -15,7 +15,7 @@
     <link rel="stylesheet" type="text/css" href="styles/pop-up.css">
     <link rel="stylesheet" type="text/css" href="styles/footer_media.css">
     <link rel="stylesheet" type="text/css" href="styles/header_media.css">
-     <link rel="stylesheet" type="text/css" href="styles/busket.css">
+     <link rel="stylesheet" type="text/css" href="styles/basket.css">
 </head>
 </head>
 <style>
@@ -45,7 +45,8 @@
                 </div>
                 <a><span class="material-icons_header" onclick="openLoginForm()"><img src="assets/account_circle_black_24dp.svg" alt="" class="icons_header"></span></a>
                     <a><span class="material-icons_header" onclick="viewBasket()"><img src="assets/favorite_border_black_24dp.svg" alt="" class="icons_header"></span></a>
-                    <a><span class="material-icons_header"><img onclick="viewBasket()" src="assets/shopping_cart_black_24dp.svg" alt="" class="icons_header"></span></a>
+                    <a><span class="material-icons_header" onclick="viewBasket()"><img src="assets/shopping_cart_black_24dp.svg" alt="" class="icons_header">
+                    <div class="counterInBasket" id="counterInBasket"></div></span></a>
                     <a style="margin-top: -2px;"><span class="material-icons_header search"><img id="searchBtn"  src="assets/search_white_24dp.svg" alt="" class="icons_header">
                         <img id="closeSearchBtn" src="assets/close_white_24dp.svg" alt="" class="icons_header close_none"></span></a>
             </div>
@@ -135,7 +136,7 @@
         </div>
         <div class="container-basket" id="container-basket">
             <div class="busketInfo">
-                <div class="goodsExistInfo">0 товаров в вашей корзине</div>
+                <div class="goodsExistInfo" id="goodsExistInfo"></div>
                 <div class="closeBusketBtn" onclick="closeBasket()"><img src="assets/close_gray_24dp.svg" alt=""></div>
             </div>
             <div class="goodBusketField" id="BusketField">
@@ -147,89 +148,32 @@
 
         <div class="main_collection_page" id="main_collection_page">
             <h2 class="h2_main">Кеды</h2>
-            <div class="filter_panel">
+            <div class="filter_panel" id="filter_panel">
                 <div class="found_good">Найдено 36 товаров</div>
                 <div class="fiter" id="fiter">
-                    <div class="price_choice" id="price_choice" >Цена <span class="drop_down">
-                        <img id="rotate_price" src="assets/arrow_drop_down_black_24dp.svg" alt=""></span> </div>
+                    <div class="price_choice" id="price_choice" onclick="openFilter(select_price_field)">Цена <span class="drop_down">
+                        <img id="rotate_select_price_field" src="assets/arrow_drop_down_black_24dp.svg" alt=""></span> </div>
 
-                        <div class="select_price_field" id="select_price_field" >
-                           <div class="price_select_item"> 
-                                <input type="radio" name="select-price" value="100" id="priceup100" />
-                                <label for="priceup100">До 100 BYN</label> </div>
-                            <div class="price_select_item"> 
-                                <input type="radio" name="select-price" value="200" id="priceup200"/>
-                            <label for="priceup200">100 BYN - 200 BYN</label></div>
-                            <div class="price_select_item"> 
-                                <input type="radio" name="select-price" value="300" id="priceup300"/>
-                            <label for="priceup300">200 BYN - 300 BYN</label></div>
-                            <div class="price_select_item"> 
-                                <input type="radio" name="select-price" value="400" id="pricefrom300"/>
-                            <label for="pricefrom300">Более 300 BYN</label></div>
+                        <div class="select_price_field open" id="select_price_field" >
                         </div>
 
 
-                    <div class="type_choice" id="type_choice">Тип товара <span class="drop_down">
-                        <img id="rotate_type" src="assets/arrow_drop_down_black_24dp.svg" alt=""></div>
-                        <div class="select_type_field" id="select_type_field">
-                            <div class="type_select_item"> 
-                                 <input type="checkbox" name="select-type" value="short" id="short" />
-                                 <label for="short">Низкие кеды</label> </div>
-                             <div class="type_select_item"> 
-                                 <input type="checkbox" name="select-type" value="long" id="long"/>
-                             <label for="long">Высокие</label></div>
-                             <div class="type_select_item"> 
-                                 <input type="checkbox" name="select-type" value="platform" id="platform"/>
-                             <label for="platform">На платформе</label></div>
+                    <div class="type_choice" id="type_choice" onclick="openFilter(select_type_field)">Тип товара <span class="drop_down">
+                        <img id="rotate_select_type_field" src="assets/arrow_drop_down_black_24dp.svg" alt=""></div>
+                        <div class="select_type_field open" id="select_type_field">
                          </div>
 
+                    <div class="color_choice" id="color_choice" onclick="openFilter(select_color_field)">Цвет <span class="drop_down">
+                        <img  id="rotate_select_color_field" src="assets/arrow_drop_down_black_24dp.svg" alt=""></span> </div>
 
-                    <div class="size_choice" id="size_choice">Размер <span class="drop_down">
-                        <img id="rotate_size" src="assets/arrow_drop_down_black_24dp.svg" alt=""></span> </div>
-                            <div class="select_size_field" id="select_size_field">
-
-                             </div>
-
-                    <div class="color_choice" id="color_choice">Цвет <span class="drop_down">
-                        <img  id="rotate_color" src="assets/arrow_drop_down_black_24dp.svg" alt=""></span> </div>
-
-                        <div class="select_color_field" id="select_color_field">
-                            <div class="color_select_item"> 
-                                 <input type="checkbox" name="select-color" value="black" id="black" />
-                                 <label for="black">Черный</label> </div>
-                             <div class="color_select_item"> 
-                                 <input type="checkbox" name="select-color" value="white" id="white"/>
-                             <label for="white">Белый</label></div>
-                             <div class="color_select_item"> 
-                                 <input type="checkbox" name="select-color" value="beige" id="beige"/>
-                             <label for="beige">Бежевый</label></div>
-                             <div class="color_select_item"> 
-                                <input type="checkbox" name="select-color" value="red" id="red"/>
-                            <label for="red">Красный</label></div>
-                            <div class="color_select_item"> 
-                                <input type="checkbox" name="select-color" value="multi" id="multi"/>
-                            <label for="multi">Мульти</label></div>
-                            <div class="color_select_item"> 
-                                <input type="checkbox" name="select-color" value="blue" id="blue"/>
-                            <label for="blue">Синий</label></div>
-                            <div class="color_select_item"> 
-                                <input type="checkbox" name="select-color" value="yellow" id="yellow"/>
-                            <label for="yellow">Желтый</label></div>
-                            <div class="color_select_item"> 
-                                <input type="checkbox" name="select-color" value="gray" id="gray"/>
-                            <label for="gray">Серый</label></div>
+                        <div class="select_color_field open" id="select_color_field">
                          </div>
 
-                    <div class="male_choice" id="male_choice">Пол <span class="drop_down">
-                        <img id="rotate_male" src="assets/arrow_drop_down_black_24dp.svg" alt=""></span> </div>
+                    <div class="male_choice" id="male_choice" onclick="openFilter(select_male_field)">Пол <span class="drop_down">
+                        <img id="rotate_select_male_field" src="assets/arrow_drop_down_black_24dp.svg" alt=""></span> </div>
 
-                        <div class="select_male_field" id="select_male_field">
-                            <div class="male_select_item" id="male_select_item"> 
-                                 <input type="checkbox" name="select-male" value="man" id="man" />
-                                 <label for="man"> Мужской </label> </div>
-                             <div class="type_select_item"> 
-                                 <input type="checkbox" name="select-male" value="unisex" id="unisex"/>
-                             <label for="unisex">Унисекс</label></div>
+                        <div class="select_male_field open" id="select_male_field">
+                            
                          </div>
                 </div>
                 <div class="sort">Сортировка : По умолчанию</div>
@@ -291,12 +235,14 @@
         </div>
         <script src="js/js_page_collection/products.js"></script>
         <script src="js/main-page/js-menu.js"></script>
-        <script src="js/js_page_collection/js_filter.js"></script>
+       
         <script src="js/js_page_collection/renderView.js"></script>
         <script src="js/js_page_collection/basket.js"></script>
-        <script src="js/main-page/js-busket-view.js"></script>
+        <script src="js/main-page/js-basket-view.js"></script>
         <script src="js/js_page_collection/color_select.js"></script>
         <script src="js/main-page/js-search.js"></script>
+        <script src="js/js_page_collection/collection_filters.js"></script>
+        <script src="js/js_page_collection/filters.js"></script>
         
         
 </body>

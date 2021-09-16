@@ -1,7 +1,6 @@
 let filtered;
 
 function changeColor (color) {
-
     let product;
     filtered = items.filter(function(item) {
         if(item.id === color.id) {
@@ -31,7 +30,6 @@ function changeColor (color) {
         </div>
         `
 }
-document.getElementById(`${product.span}`).innerHTML = html
-
-addBtn ()
+        document.getElementById(`${product.span}`).innerHTML = html
+        addBtn ()
 }
