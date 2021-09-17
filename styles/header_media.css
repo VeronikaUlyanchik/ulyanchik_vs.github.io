@@ -7,3 +7,76 @@
         font-size: 13px;
     }
 }
+@media all and (max-width: 1120px){
+    .menu-men, .menu-women, .menu-kids, .menu-sale {
+    width: 60%;
+    }
+    .menu_part_left {
+    margin: 10px 20px;
+    }
+    .menu_part_right {
+    margin: 10px 20px;}
+
+    .menu_links_snikers {
+        font-size: 15px;
+}
+    }
+
+
+@media all and (max-width: 900px){
+        .header{
+flex-direction: column-reverse;
+    height: 117px;
+}
+.menu-men, .menu-women, .menu-kids, .menu-sale {
+    width: 80%;
+}
+.menu_part_left {
+    margin: 10px 20px;
+}
+.menu_part_right {
+    margin: 10px 20px;}
+
+.menu_links_snikers {
+        font-size: 12px;
+}
+.search_field {
+    top: 50px;
+    width: 0px;
+    right: -136px;
+    transition: width 1s;
+}
+.search_input {
+    height: 50px;
+    width: 50%;
+    font-size: 13px;
+}
+#search_label_input {
+    width: 50px;
+}
+.login, .registration {
+    width: 375px;
+    height: 491px;
+    left: 19%;
+    top: 217px;
+}
+.login_button, .registration_button {
+    font-size: 21px;
+}
+.login_form {
+    margin-top: 35px;
+}
+#login_button, #registration_button {
+    font-size: 21px;
+}
+}
+
+@media all and (max-width: 760px){
+.header_right {
+ margin-left: -294px;}
+
+.header_line {
+ 
+    background-color: white;
+}
+}

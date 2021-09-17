@@ -13,10 +13,11 @@
     <link rel="stylesheet" type="text/css" href="styles/footer.css">
     <link rel="stylesheet" type="text/css" href="styles/main-collection-page.css">
     <link rel="stylesheet" type="text/css" href="styles/pop-up.css">
-    <link rel="stylesheet" type="text/css" href="styles/footer_media.css">
-    <link rel="stylesheet" type="text/css" href="styles/header_media.css">
      <link rel="stylesheet" type="text/css" href="styles/basket.css">
      <link rel="stylesheet" type="text/css" href="styles/registration_form.css">
+     <link rel="stylesheet" type="text/css" href="styles/footer_media.css">
+     <link rel="stylesheet" type="text/css" href="styles/header_media.css">
+     <link rel="stylesheet" type="text/css" href="styles/page_collection_media.css">
 </head>
 </head>
 <style>
@@ -193,7 +194,7 @@
         <div class="main_collection_page" id="main_collection_page">
             <h2 class="h2_main">Кеды</h2>
             <div class="filter_panel" id="filter_panel">
-                <div class="found_good">Найдено 36 товаров</div>
+                <div class="found_good">Найдено товаров: <span id="foundItems"></span></div>
                 <div class="fiter" id="fiter">
                     <div class="price_choice" id="price_choice" onclick="openFilter(select_price_field)">Цена <span class="drop_down">
                         <img id="rotate_select_price_field" src="assets/arrow_drop_down_black_24dp.svg" alt=""></span> </div>
@@ -221,7 +222,10 @@
                             
                          </div>
                 </div>
-                <div class="sort">Сортировка : По умолчанию</div>
+                <div class="sort">Сортировка : По умолчанию
+                    
+                    <p id="resetFilterBtn" class="resetFilterBtn" onclick="resetFilters()"><ins>Сбросить фильтры</ins></p>
+                </div>
             </div>
         </div>
         <div class="product_list" id="product_list">

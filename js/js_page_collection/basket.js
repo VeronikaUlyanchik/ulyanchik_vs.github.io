@@ -21,7 +21,7 @@ function generateBasket(){
                 <p>${item.title}</p>
                 <p>${item.price} BYN </p> 
             <div>
-            <p>Размер: </p> 
+            <p>Размер: ${generateSize(item.size)} </p> 
             <p>Цвет: ${item.color}</p>
             <p>Количество: <button  class="countBtn" onclick="addCount(${index}, -1)">-</button>${item.count} 
             <button  class="countBtn" onclick="addCount(${index}, 1)">+</button></p>
@@ -73,6 +73,16 @@ if (foundItem) {
 }
 generateBasket();
 localStorage.setItem(keyBusket, JSON.stringify(basketArray))
+}
+
+function generateSize(size) {
+    let option;
+    let arrSize = size.split(',')
+    for (let i = 0; i < arrSize.length; i++) {
+        option += `
+        <option value="${arrSize[i]}">${arrSize[i]}</option>` 
+    }
+    return `<select>${option} </select>`
 }
 
 

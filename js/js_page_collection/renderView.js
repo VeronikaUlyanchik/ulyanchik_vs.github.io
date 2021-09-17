@@ -12,6 +12,7 @@ function renderView() {
 })
     containerForGoods.innerHTML = renderHtml(renderView);
     mainView = renderView;
+    foundItems.innerHTML = `${mainView.length}`
 }
 
 

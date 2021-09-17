@@ -11,10 +11,10 @@
     top: 7px;
 }
 .main_picture_and_link {
-   margin: 0 80px;
-   min-width: 900px;
+   margin: 0 35px;
+   min-width: 516px;
    position: relative;
-   transition: 2s;
+   transition: 1s;
  }
 div.picture_main img{
     width: 100%;

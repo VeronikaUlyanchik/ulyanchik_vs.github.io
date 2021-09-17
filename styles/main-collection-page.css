@@ -28,7 +28,11 @@ a {
 .sort {
     width: 200px;
     font-size: 13px;
-    padding: 10px;
+    padding-left: 10px;
+}
+.resetFilterBtn{
+    cursor: pointer;
+    display: none;
 }
 .drop_down {
     position: relative;
@@ -152,4 +156,8 @@ div.good_card:hover > div.color_select_btn{
 }
 div.good_card p {
     padding-left: 15px;
+}
+select:hover { 
+    background-color:black;
+    color: white; 
 }

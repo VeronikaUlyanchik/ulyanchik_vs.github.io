@@ -1,3 +1,5 @@
+const foundItems = document.getElementById('foundItems');
+const resetFilterBtn = document.getElementById('resetFilterBtn');
 let selected;
 let found;
 
@@ -9,8 +11,10 @@ function select(select) {
         }
     })
     mainView=selected
-    containerForGoods.innerHTML=renderHtml(mainView)
-    addBtn ()
+    containerForGoods.innerHTML=renderHtml(mainView);
+    foundItems.innerHTML =`${mainView.length}`;
+    resetFilterBtn.style.display ='block';
+    addBtn ();
 }
 
 const selectedBrands = new Array();
@@ -26,8 +30,10 @@ function onFilter(criteria) {
              }
          })
          mainView=found
-    containerForGoods.innerHTML=renderHtml(mainView)
-    addBtn ()
+    containerForGoods.innerHTML=renderHtml(mainView);
+    foundItems.innerHTML = `${mainView.length}`;
+    resetFilterBtn.style.display ='block';
+    addBtn ();
 }
 
 
@@ -36,4 +42,10 @@ function onChangeFilter(brand) {
     
     onFilter(selectedBrands)
     addBtn ()
+}
+
+function resetFilters(){
+    renderView() 
+    addBtn ()
+    resetFilterBtn.style.display ='none';
 }

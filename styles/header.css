@@ -18,6 +18,7 @@
 }
 .header_right {
     display: flex;
+    margin-left: 0px;
 }
 .header , .header_left {
     display: flex;
@@ -34,7 +35,6 @@
 .links {
     margin: 15px;
     font-size: 17px;
-    transition: 2s;
 }
 div.links p , div.links a {
     text-decoration: none;

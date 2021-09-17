@@ -1,6 +1,6 @@
 @media all and (max-width: 1030px){
     div.main_link_info h2 {
-        font-size: 4vw;
+        font-size: 3vw;
     }
     .info_snikers, .info_snikers_flowers {
         font-size: 2.5vw;
@@ -22,7 +22,11 @@
     .platform_snikers_part {
         margin: 0px 0px;
     }
-    }
+    div.main_link_info h2 {
+    margin-left: 10px;
+    font-size: 20px;
+    } 
+}
 
     @media all and (max-width: 1245px){
     div.table_links_big_box div {
@@ -31,6 +35,13 @@
     .table_links_small_box {
         height: 156px;
     }
+    div.main_link_info h2 {
+        margin-left: 10px;
+        font-size: 20px;
+        } 
+        .main_link_info, .flowers_link_info, .platform_link_info {
+            bottom: 73px;
+            z-index: 1;}
 }
 
 @media all and (max-width: 1660px) {
@@ -64,4 +75,15 @@
     .container_goods {
         width: 705px;
     }
+    .type_find_styles {
+        grid-template-columns: repeat(2, 50%);
     }
+    }
+    @media (max-width: 600px) {
+        div.table_links_big_box div {
+            height: 100px;}
+        .table_links_big_box {
+         
+            flex-direction: column;
+        }
+        }
