@@ -51,7 +51,7 @@ function openFilter(field) {
 }
 
 function setTimeouts() {
-    timer = setTimeout(closeSelects, 2000);
+    timer = setTimeout(closeSelects, 500);
   }
 
   function closeSelects() {
